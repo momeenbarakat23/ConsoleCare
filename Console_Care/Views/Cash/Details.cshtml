@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Console_Care.Models.Cash>
+
+@{
+    ViewData["Title"] = "عهده الفنيين";
+}
+
+@{
+
+    var list2 = new HashSet<DateTime>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Date);
+
+    }
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+}
+
+<partial>
+    @Html.Partial("BankingDashBoard");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">  
+        <div class="filterlist">
+            <label>date</label>
+            <input type="date" class="form-control" id="filterdate" onchange="filter1()" />
+        </div>
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2> نقديه</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+        <div>
+            <a asp-action="Add" class="btn btn-success ">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">نوع الكاش</th>
+                            <th class="tblcoltext ">اسم الفني</th>
+                            <th class="tblcoltext ">رقم الحساب</th>
+                            <th class="tblcoltext">التاريخ</th>
+                            <th class="tblcoltext">الداخل</th>
+                            <th class="tblcoltext">الخارج</th>
+                            <th class="tblcoltext">الاجمالي</th>
+                            <th class="tblcoltext">الخارج الي</th>
+                            <th class="tblcoltext">اسم العميل </th>
+                            <th class="tblcoltext">البيان </th>
+                            <th class="tblcoltext"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="order namesearch">
+                                <td>@item.AccountName </td>
+                                <td>@item.Nameoftech</td>
+                                <td>@item.NoOfaccount</td>
+                                <td>@item.Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                <td>@item.paid</td>
+                                <td>@item.Outgoing</td>
+                                <td>@item.TotalAmount</td>
+                                <td>@item.MoneyOut</td>
+                                <td>@item.Nameofcust</td>
+                                <td>@item.Statement</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>|
+                                    <a asp-action="Delete" asp-route-id="@item.Id" asp-route-name="@item.AccountName" class="btn btn-danger">Delete</a>
+                                    @if (ViewBag.num==1)
+                                    {
+                                        <a asp-action="ConvertToStorage" asp-route-id="@item.Id" class="btn btn-warning">تبعت للعهده</a>
+                                    }
+
+                                    
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>

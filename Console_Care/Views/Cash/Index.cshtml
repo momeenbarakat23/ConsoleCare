@@ -1,0 +1,177 @@
+﻿@using Console_Care.ViewModel
+@model CashViewModel
+@{
+    ViewData["Title"] = "CustomerDataBase";
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>getdata</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:100%;padding-right: 0px;padding-left: 0px;">
+
+        <section class="">
+            <h2 class="title"></h2>
+            <div class="mycontent" style="flex-direction:column; margin:auto;width:70%;">
+                <div class="cash">
+                    <a asp-action="Details" asp-controller="Cash" asp-route-typeofcash="VodafoneCash">
+                    <div class="mycard">
+                        <div class="icon">
+                            <img src="~/img/vcash.jpg" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> فودافون كاش</h3>
+                            <p>
+
+                            </p>
+                        </div>
+                       
+                    </div>
+                </a>
+                    <div class="pricecard">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الداخل</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.PaidVoda" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الخارج</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.OutgoingVoda" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">الرصيد الحالى</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.TotalAmountVoda" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cash">
+                    <a asp-action="Details" asp-controller="Cash" asp-route-typeofcash="عهده">
+                        <div class="mycard">
+
+
+
+                            <div class="icon">
+                                <img src="~/img/con3s.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="info">
+                                <h3>عهده</h3>
+                                <p>
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="pricecard">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الداخل</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.PaidEmp" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الخارج</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.OutgoingEmp" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">الرصيد الحالى</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.TotalAmountEmp" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cash">
+                    <a asp-action="Details" asp-controller="Cash" asp-route-typeofcash="Instapay">
+
+                        <div class="mycard">
+
+
+
+                            <div class="icon">
+                                <img src="~/img/instapay.jpg" alt="Alternate Text" />
+                            </div>
+                            <div class="info">
+                                <h3> انستا باي</h3>
+                                <p>
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="pricecard">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الداخل</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.PaidInstapay" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الخارج</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.OutgoingInstapay" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">الرصيد الحالى</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.TotalAmountInstapay" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cash">
+                    <a asp-action="Details" asp-controller="Cash" asp-route-typeofcash="الخزنه">
+
+                        <div class="mycard">
+
+
+
+                            <div class="icon">
+                                <img src="~/img/الخزنه.jpg" style="height:200px;" alt="Alternate Text" />
+                            </div>
+                            <div class="info">
+                                <h3> الخزنه</h3>
+                                <p>
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="pricecard">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الداخل</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.Paidstorage" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">إجمالى الخارج</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.Outgoingstorage" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">الرصيد الحالى</div>
+                            <div class="card-body">
+                                <p class="card-header"><input id="invoice-total" type="number" value="@Model.TotalAmountstorage" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿@model Console_Care.Models.Customer
+
+@{
+    var data = User.Claims;
+}
+@section css {
+    <link href="~/css/order.css" rel="stylesheet" />
+    <style>
+
+
+    </style>
+}
+
+<h1>Create</h1>
+
+<h4>OrderByCustomer</h4>
+<hr />
+<div class="orderform">
+    <div class="col-md-4">
+        <form asp-action="SaveEdit">
+            <div id="error" asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control input-field" required />
+                 <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control input-field" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfCustomer" class="control-label"></label>
+                <select asp-for="TypeOfCustomer" class="form-control input-field">
+                    <option value="Home">--select--</option>
+                    <option>Home</option>
+                    <option>Hall Effect</option>
+                    <option>PsCafe</option>
+                    <option>PsCafe(عقد)</option>
+                </select>
+                <span asp-validation-for="TypeOfCustomer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ps4OrPs5" class="control-label"></label>
+                <select asp-for="Ps4OrPs5" class="form-control input-field">
+                    <option value="ps4">select</option>
+                    <option>ps4</option>
+                    <option>ps5</option>
+                    <option>xbox series</option>
+                </select>
+                <span asp-validation-for="Ps4OrPs5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                    <input id="Address" asp-for="Address" class="form-control input-field" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="city" class="control-label"></label>
+                    <input id="city" asp-for="city" class="form-control input-field" />
+                    <span asp-validation-for="city" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Order" class="control-label"></label>
+                <input id="Order" asp-for="Order" class="form-control input-field" />
+                <span asp-validation-for="Order" class="text-danger"></span>
+            </div>
+            <div class="btn btn-success">
+                <input type="submit" value="Edit" class=" btn-success form-control" />
+            </div>
+            <div class="btn btn-dark">
+                <a asp-action="Index" asp-controller="Home" class=" btn-dark form-control">Back to Home</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

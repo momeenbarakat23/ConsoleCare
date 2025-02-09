@@ -1,0 +1,36 @@
+
+.orderform {
+    margin-bottom: 250px;
+    margin-top: 210px;
+}
+.remember{
+    width: 140px !important;
+    display: flex;
+    justify-content: space-between;
+    justify-items:center;
+    height:40px;
+    padding:20px 0 0 0px;
+
+}
+@media (max-width:1080px) {
+    .orderform {
+        margin: 15em 20em 14em 18em !important;
+        width: 500px;
+    }
+
+    body {
+    }
+}
+@media (max-width:760px) {
+    .orderform {
+        margin: 17em 5em !important;
+        width: 500px;
+    }
+}
+
+@media (max-width:580px) {
+    .orderform {
+        margin: 15em 0 20em 5em !important;
+        width: 300px;
+    }
+}

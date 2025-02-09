@@ -1,0 +1,117 @@
+﻿@model List<Console_Care.Models.Employee>
+
+@{
+    ViewData["Title"] = "displayEmployee";
+}
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.name);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.role);
+
+    }
+    var x = 0;
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+
+}
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filternameemp" onchange="filteremp()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>Roles</label>
+            <select class="form-control" id="filterrole" onchange="filteremp()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>كل الفنيين</h2>
+        </div>
+        <div>
+            <a asp-action="AddEmployee" class="btn btn-success ">Add</a> 
+        </div>
+    </div>
+    <section class="details" >
+        <div class="allorders">
+            <div class="cardheader" id="tab">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">الاسم</th>
+                            <th class="tblcoltext ">الوظيفه</th>
+                            <th class="tblcoltext">ملاحظات</th>
+                            <th class="tblcoltext">عدد الفواتير</th>
+                            <th class="tblcoltext">الفلوس الي دخلها</th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+
+                            <tr class="orderemp namesearch">
+                                <td>@item.name </td>
+                                <td>@item.role</td>
+                                <td>@item.Note</td>
+                                <td>@item.countinvoice</td>
+                                <td>@item.paid</td>
+                            
+                               
+                                <td>
+                                    <a asp-action="EditEmployee" asp-route-id="@item.id" class="btn btn-secondary">Edit</a> 
+                                    <a onclick="alert()" asp-action="deleteEmployee" asp-route-id="@item.id" class="btn btn-danger">Delete</a> 
+                                </td>
+                                
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>

@@ -1,0 +1,73 @@
+﻿@model Console_Care.Models.Purchase_Payments
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>Edit</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:100%">
+
+        <section class="">
+            <h2 class="title" style="color:white;">تعديل مشتريات</h2>
+            <form asp-action="Edit" style="justify-items: center;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="InvoiceValue" class="control-label"></label>
+                    <input asp-for="InvoiceValue" class="form-control" />
+                    <span asp-validation-for="InvoiceValue" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PaidValue" class="control-label"></label>
+                    <input asp-for="PaidValue" class="form-control" />
+                    <span asp-validation-for="PaidValue" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SupplierName" class="control-label"></label>
+                    <input asp-for="SupplierName" class="form-control" />
+                    <span asp-validation-for="SupplierName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="typeofcash" class="control-label"></label>
+                    <select class="form-control" asp-for="typeofcash" id="typeofcust">
+                        <option>@Model.typeofcash</option>
+                        <option value="VodafoneCash">VodafoneCash</option>
+                        <option value="عهده">عهده</option>
+                        <option value="Instapay">Instapay</option>
+                        <option value="الخزنه">الخزنه</option>
+                    </select>
+                    <span asp-validation-for="typeofcash" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Invoicenumber" class="control-label"></label>
+                    <input asp-for="Invoicenumber" class="form-control" />
+                    <span asp-validation-for="Invoicenumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateTime" class="control-label"></label>
+                    <input asp-for="DateTime" class="form-control" />
+                    <span asp-validation-for="DateTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Note" class="control-label"></label>
+                    <input asp-for="Note" class="form-control" />
+                    <span asp-validation-for="Note" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </section>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,111 @@
+﻿
+@model followUp
+
+@{
+    var dropdownlist = new SelectList(ViewBag.emp, "name", "name");
+    ViewData["Title"] = "EditData";
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+
+}
+<h1>getdata</h1>
+<div class="mycontainer">
+
+
+    <div>
+        <h1>Customer</h1>
+        <hr />
+        <div class="admintext">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    اسم العميل
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Customer.Name)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.TypeOfCustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.TypeOfCustomer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.LastFollowUpDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.LastFollowUpDate)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.stateOfFolowUp)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.stateOfFolowUp)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FaultStatement)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FaultStatement)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.WarrantyTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.WarrantyTime)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class=" backgroundfrom">
+        <div class="col-md-4">
+            <form asp-action="EditData">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="NextFollowUpDate" class="control-label"></label>
+                    <input asp-for="NextFollowUpDate" class="form-control" />
+                    <span asp-validation-for="NextFollowUpDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastFollowUpDate" class="control-label"></label>
+                    <input asp-for="LastFollowUpDate" class="form-control" />
+                    <span asp-validation-for="LastFollowUpDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Maintenance_Implementation_Date" class="control-label"></label>
+                    <input asp-for="Maintenance_Implementation_Date" class="form-control" />
+                    <span asp-validation-for="Maintenance_Implementation_Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WarrantyTime" class="control-label"></label>
+                    <input asp-for="WarrantyTime" class="form-control" />
+                    <span asp-validation-for="WarrantyTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SuggestionsAndIssues" class="control-label"></label>
+                    <input asp-for="SuggestionsAndIssues" class="form-control" />
+                    <span asp-validation-for="SuggestionsAndIssues" class="text-danger"></span>
+                </div>
+                <label asp-for="stateOfFolowUp" class="control-label"></label>
+                <select asp-for="stateOfFolowUp" class="form-control">
+                    <option>@Model.stateOfFolowUp</option>
+                    <option>الانتظار</option>
+                    <option>تتم الصيانه</option>
+                    <option>تمت المتابعه1</option>
+                    <option>تمت المتابعه2</option>
+                    <option>الغاء الصيانه</option>
+                </select>
+                <div class="form-group">
+                    <label asp-for="Employee.name" class="control-label"></label>
+                    <select asp-items="dropdownlist" asp-for="Employee.name" class="form-control">
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

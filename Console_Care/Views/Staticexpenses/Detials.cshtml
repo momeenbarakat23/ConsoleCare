@@ -1,0 +1,116 @@
+﻿@model IEnumerable<Console_Care.Models.static_expenses>
+
+@{
+    ViewData["Title"] = "Detials";
+}
+
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+}
+
+<partial>
+    @Html.Partial("BankingDashBoard");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>date</label>
+            <input type="date" class="form-control" id="filterdate" onchange="filter1()" />
+        </div>
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>@ViewBag.NameOfDepartment</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+        <div>
+            <a asp-action="Add" class="btn btn-success ">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class=" scroll table table-bordered " style="width:2500px;" id="tblorder">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.NameOfDepartment)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Employee)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.January)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.February)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.March)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.April)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.May)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.June)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.July)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.August)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.September)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.October)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.November)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.December)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Total)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.salary)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.DateTime)</th>
+                            <th class="tblcoltext"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="order namesearch">
+                                <td>@item.NameOfDepartment </td>
+                                <td> <a asp-action="employeemoney" asp-controller="Staticexpenses" asp-route-id="@item.Id" >@item.Employee</a></td>
+                                <td>@item.January EGP</td>
+                                <td>@item.February EGP</td>
+                                <td>@item.March EGP</td>
+                                <td>@item.April EGP</td>
+                                <td>@item.May EGP</td>
+                                <td>@item.June EGP</td>
+                                <td>@item.July EGP</td>
+                                <td>@item.August EGP</td>
+                                <td>@item.September EGP</td>
+                                <td>@item.October EGP</td>
+                                <td>@item.November EGP</td>
+                                <td>@item.December EGP</td>
+                                <td>@item.Total EGP</td>
+                                <td>@item.salary EGP</td>
+                                <td>@item.DateTime?.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>|
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot style="background-color:white; color:black;">
+                        <tr>
+                            <td>الاجمالي كل الاشهر</td>
+                            <td> </td>
+                            @foreach (var item in ViewBag.TotalOFMonth)
+                            {
+                                <td>@item EGP</td>
+                            }
+                            <td style="background-color:red; color:white;"> @ViewBag.total EGP</td>
+                            <td>@ViewBag.totalofsalary EGP </td>
+                            <td> </td>
+                            <td> </td>
+
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>

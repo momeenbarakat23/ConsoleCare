@@ -1,0 +1,209 @@
+body {
+background-image: url("../img/imageedit_1_9467993578.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.pb-3{
+padding:0 !important;
+}
+.mycontainer {
+display: flex !important;
+justify-content: space-between !important;
+margin: 82px 0 0 16em;
+color: white;
+}
+
+.admintext {
+font-size: 20px;
+display: flex;
+width:700px;
+   
+    
+}
+.col-sm-10{
+padding:0 0 0 120px;
+
+}
+
+.row{
+width:900px !important;
+}
+
+.backgroundfrom{
+height:800px;
+width:60em;
+overflow:hidden;
+background-attachment:fixed;
+background-size:contain;
+background-color:#000000ac;
+padding:50px 250px;
+    
+    
+}
+
+.form-control{
+width:600px !important;
+}
+
+/*Deleteform*/
+.Deleteform {
+    width: 600em !important;
+    padding: 10px 100px;
+    direction: rtl;
+    height: 800px;
+    overflow: scroll !important;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+}
+
+.Deleteform h1 {
+    font-size: 150px;
+}
+
+.Deleteform .col-md-4 {
+    width: 1500px !important;
+}
+@media (max-width:1800px){
+.mycontainer {
+    margin: 82px 0 0 1em;
+    display: flex;
+    flex-direction:row;
+}
+.admintext {
+    font-size: 17px;
+    display: flex;
+    width: 400px;
+}
+.backgroundfrom {
+    height: 800px;
+    width: 150em;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+    padding: 10px 20px;
+}
+
+.form-control {
+    width: 700px !important;
+}
+}
+
+@media (max-width:1600px) {
+
+
+.admintext {
+    font-size: 15px;
+    display: flex;
+    width: 350px;
+}
+
+.backgroundfrom {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+    padding: 10px 200px;
+}
+
+.form-control {
+    width: 700px !important;
+}
+/*Deleteform*/
+.Deleteform {
+    width: 400em !important;
+    padding: 10px 100px;
+    direction: rtl;
+    height: 800px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+}
+
+    .Deleteform h1 {
+        font-size: 100px;
+    }
+
+    .Deleteform .col-md-4 {
+        width: 1000px !important;
+    }
+
+    
+
+
+}
+
+@media (max-width:1315px) {
+
+.backgroundfrom {
+    padding: 10px 10px;
+}
+
+.form-control {
+    width: 500px !important;
+}
+}
+
+@media (max-width:909px) {
+
+
+.admintext {
+    font-size: 15px;
+    display: flex;
+    width: 290px;
+}
+
+.backgroundfrom {
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+    padding: 0px 10px;
+}
+
+.form-control {
+    width: 300% !important;
+}
+/*Deleteform*/
+.Deleteform {
+    width: 200em !important;
+    padding: 10px 80px;
+    direction: rtl;
+    height: 800px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #000000ac;
+}
+
+    .Deleteform h1 {
+        font-size: 100px;
+    }
+
+    .Deleteform .col-md-4 {
+        width: 500px !important;
+    }
+}
+@media (max-width:1080px) {
+    .passicon {
+        left: 90% !important;
+    }
+}
+
+@media (max-width:769px) {
+
+
+
+.form-control {
+    width: 100% !important;
+}
+}

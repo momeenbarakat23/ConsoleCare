@@ -1,0 +1,478 @@
+﻿@using Console_Care.ViewModel
+@model List<followupViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    var list1 = new HashSet<string>
+    ();
+    foreach (var item in Model)
+    {
+    list1.Add(item.stateOfFolowUp);
+
+    }
+    var list2 = new HashSet<DateTime>
+    ();
+    foreach (var item in Model)
+    {
+    list2.Add(item.LastFollowUpDate);
+
+    }
+    var list3 = new HashSet<DateTime>
+    ();
+    foreach (var item in Model)
+    {
+    list3.Add(item.NextFollowUpDate);
+
+    }
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+
+    <script src="~/moment.js/moment.min.js"></script>
+    <script src="~/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+}
+
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>stateOfFolowUp</label>
+            <select class="form-control" id="filtername" onchange="filter2()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>NextFollowUpDate</label>
+            <input type="date" class="form-control" id="filterCity" onchange="filter2()" />
+
+        </div>
+        <div class="filterlist">
+            <label>LastFollowUpDate</label>
+                <input type="date" class="form-control" id="filterps" onchange="filter2()" />
+
+        </div>
+
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>المتابعات</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                <th class="tblcoltext ">العميل</th>
+                <th class="tblcoltext ">الفني</th>
+                <th class="tblcoltext">بيان العطل</th>
+                <th class="tblcoltext">المتابعه الاولى</th>
+                <th class="tblcoltext">المتابعه التانيه</th>
+                <th class="tblcoltext">نوع العميل</th>
+                <th class="tblcoltext">الشكاوي و الاعطال</th>
+                <th class="tblcoltext">تاريخ تنفيذ الصيانه</th>
+                <th class="tblcoltext">اخر متابعه</th>
+                <th class="tblcoltext">حاله المتابعات</th>
+                <th class="tblcoltext"></th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            @if (item.NameofEmployee == ViewBag.name)
+                            {
+                            if (((DateTime.UtcNow.Date >= item.LastFollowUpDate.Date)) && ((item.stateOfFolowUp != "تمت المتابعه1") && (item.stateOfFolowUp != "الغاء الصيانه")))
+                            {
+                                <tr class="order namesearch" style="background-color:red">
+                                    <td>@item.NameofCustomer </td>
+                                    <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.SuggestionsAndIssues</td>
+                                    <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    @if (item.stateOfFolowUp == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                    }
+                                    
+                                    else if (item.stateOfFolowUp == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "تمت المتابعه1")
+                                    {
+                                        <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.stateOfFolowUp</td>
+                                    }
+
+                                    <td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+
+
+                                </tr>
+                            }
+                            else if (( (DateTime.UtcNow.Date >= item.NextFollowUpDate.Date)) && ((item.stateOfFolowUp != "تمت المتابعه2") && (item.stateOfFolowUp != "الغاء الصيانه")))
+                            {
+                                <tr class="order namesearch" style="background-color:red">
+                                    <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameofCustomer </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.SuggestionsAndIssues</td>
+                                    <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    @if (item.stateOfFolowUp == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                    }
+
+                                    else if (item.stateOfFolowUp == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "تمت المتابعه2")
+                                    {
+                                        <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.stateOfFolowUp</td>
+                                    }
+
+                                    <td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+
+
+                                </tr>
+                            }
+                            else if ((DateTime.UtcNow.ToString("yyyy-MM-dd") == item.LastFollowUpDate.AddDays(-1).ToString("yyyy-MM-dd")) || (DateTime.UtcNow.ToString("yyyy-MM-dd") == item.NextFollowUpDate.AddDays(-1).ToString("yyyy-MM-dd")))
+                            {
+                                <tr class="order namesearch" style="background-color:#FFEF00; color:black; ">
+                                    <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none;">@item.NameofCustomer </a></td>
+                                    <td>@item.NameofEmployee </td>
+                                    <td>@item.FaultStatement</td>
+                                    <td>@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </td>
+                                    <td>@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.SuggestionsAndIssues</td>
+                                    <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    @if (item.stateOfFolowUp == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                    }
+
+                                    else if (item.stateOfFolowUp == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "تمت المتابعه")
+                                    {
+                                        <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.stateOfFolowUp</td>
+                                    }
+
+                                    <td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+
+
+                                </tr>
+                                
+                            }else
+                            {
+                                <tr class="order namesearch">
+                                    <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameofCustomer </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.SuggestionsAndIssues</td>
+                                    <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                    @if (item.stateOfFolowUp == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                    }
+
+                                    else if (item.stateOfFolowUp == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                    }
+                                    else if (item.stateOfFolowUp == "تمت المتابعه")
+                                    {
+                                        <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.stateOfFolowUp</td>
+                                    }
+
+                                    <td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+
+
+                                </tr>
+                            }
+                            }
+                            else  @if ((User.IsInRole("admin")) || (User.IsInRole("superadmin")))
+                            {
+                                if (((DateTime.UtcNow.Date >= item.LastFollowUpDate.Date)) && ((item.stateOfFolowUp != "تمت المتابعه1") && (item.stateOfFolowUp != "الغاء الصيانه")))
+                                {
+                                    <tr class="order namesearch" style="background-color:red">
+                                        <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameofCustomer </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td>@item.TypeOfCustomer</td>
+                                        <td>@item.SuggestionsAndIssues</td>
+                                        <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        @if (item.stateOfFolowUp == "الانتظار")
+                                        {
+                                            <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                        }
+
+                                        else if (item.stateOfFolowUp == "تتم الصيانه")
+                                        {
+                                            <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                        {
+                                            <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "تمت المتابعه1")
+                                        {
+                                            <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.stateOfFolowUp</td>
+                                        }
+
+                                        <td>
+                                        <td>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+
+
+                                    </tr>
+                                }
+                                else if (((DateTime.UtcNow.Date >= item.NextFollowUpDate.Date)) && ((item.stateOfFolowUp != "تمت المتابعه2") && (item.stateOfFolowUp != "الغاء الصيانه")))
+                                {
+                                    <tr class="order namesearch" style="background-color:red">
+                                        <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameofCustomer </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td>@item.TypeOfCustomer</td>
+                                        <td>@item.SuggestionsAndIssues</td>
+                                        <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        @if (item.stateOfFolowUp == "الانتظار")
+                                        {
+                                            <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                        }
+
+                                        else if (item.stateOfFolowUp == "تتم الصيانه")
+                                        {
+                                            <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                        {
+                                            <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "تمت المتابعه2")
+                                        {
+                                            <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.stateOfFolowUp</td>
+                                        }
+
+                                        <td>
+                                        <td>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+
+
+                                    </tr>
+                                }
+                                else if ((DateTime.UtcNow.ToString("yyyy-MM-dd") == item.LastFollowUpDate.AddDays(-1).ToString("yyyy-MM-dd")) || (DateTime.UtcNow.ToString("yyyy-MM-dd") == item.NextFollowUpDate.AddDays(-1).ToString("yyyy-MM-dd")))
+                                {
+                                    <tr class="order namesearch" style="background-color:#FFEF00; color:black; ">
+                                        <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none;">@item.NameofCustomer </a></td>
+                                        <td>@item.NameofEmployee </td>
+                                        <td>@item.FaultStatement</td>
+                                        <td>@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </td>
+                                        <td>@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </td>
+                                        <td>@item.TypeOfCustomer</td>
+                                        <td>@item.SuggestionsAndIssues</td>
+                                        <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        @if (item.stateOfFolowUp == "الانتظار")
+                                        {
+                                            <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                        }
+
+                                        else if (item.stateOfFolowUp == "تتم الصيانه")
+                                        {
+                                            <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                        {
+                                            <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "تمت المتابعه")
+                                        {
+                                            <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.stateOfFolowUp</td>
+                                        }
+
+                                        <td>
+                                        <td>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+
+
+                                    </tr>
+
+                                }
+                                else
+                                {
+                                    <tr class="order namesearch">
+                                        <td><a asp-action="EditData" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameofCustomer </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NameofEmployee </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.FaultStatement </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.LastFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td><a style="text-decoration:none; color:white">@item.NextFollowUpDate.ToString("yyyy-MM-dd hh:mm:ss tt") </a></td>
+                                        <td>@item.TypeOfCustomer</td>
+                                        <td>@item.SuggestionsAndIssues</td>
+                                        <td>@item.Maintenance_Implementation_Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        <td>@item.WarrantyTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                        @if (item.stateOfFolowUp == "الانتظار")
+                                        {
+                                            <td class="pending searchstate">@item.stateOfFolowUp</td>
+                                        }
+
+                                        else if (item.stateOfFolowUp == "تتم الصيانه")
+                                        {
+                                            <td class="inprgress searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "الغاء الصيانه")
+                                        {
+                                            <td class="canceled searchstate">@item.stateOfFolowUp</td>
+
+                                        }
+                                        else if (item.stateOfFolowUp == "تمت المتابعه")
+                                        {
+                                            <td class="completed searchstate">@item.stateOfFolowUp</td>
+                                        }
+                                        else
+                                        {
+                                            <td>@item.stateOfFolowUp</td>
+                                        }
+
+                                        <td>
+                                        <td>
+                                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+
+
+                                    </tr>
+                                }
+                            }
+                            }
+                            
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+@section Scripts {
+
+
+}

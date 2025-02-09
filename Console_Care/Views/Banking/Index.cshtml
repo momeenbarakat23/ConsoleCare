@@ -1,0 +1,112 @@
+﻿@using Console_Care.ViewModel
+@model BankingViewModel
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/Banking.css">
+}
+
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+
+  
+}
+<partial>
+    @Html.Partial("BankingDashBoard");
+</partial>
+<div class="mybank">
+
+    <div class="nav-buttons">
+        <a asp-action="StaticInvoice" asp-controller="Invoice" asp-route-types="تجاري3"><button class="nav-button" style="transform: translateY(0px);">تجاري 3</button></a>
+        <a asp-action="StaticInvoice" asp-controller="Invoice" asp-route-types="تجاري2"><button class="nav-button" style="transform: translateY(0px);">تجاري 2</button></a>
+        <a asp-action="StaticInvoice" asp-controller="Invoice" asp-route-types="تجاري1"><button class="nav-button" style="transform: translateY(0px);">تجاري 1</button></a>
+        <a asp-action="StaticInvoice" asp-controller="Invoice" asp-route-types="منزلي"><button class="nav-button">منزلي</button></a>
+        <a asp-action="StaticInvoice" asp-controller="Invoice" asp-route-types="بيان"><button class="nav-button">بيان الأرباح/الخسارة</button></a>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-box" style="transform: translateY(0px);">
+            <div class="stat-title">الأصول الثابتة</div>
+            <div class="stat-value">@Model.Total_AmountStaticAssets</div>
+        </div>
+        <div class="stat-box" style="transform: translateY(0px);">
+            <div class="stat-title">المصروفات الثابتة</div>
+            <div class="stat-value">@ViewBag.totalstatic_expenses</div>
+        </div>
+        <div class="stat-box" style="transform: translateY(0px);">
+            <div class="stat-title">إجمالي المصروفات</div>
+            <div class="stat-value">@Model.Total_expenses</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-title">مصروفات أخري</div>
+            <div class="stat-value">@Model.TotalOtherExpenses EGP</div>
+        </div>
+        <div class="stat-box" style="transform: translateY(0px);">
+            <div class="stat-title">النقدية</div>
+            <div class="stat-value">@Model.TotalCash EGP</div>
+        </div>
+    </div>
+
+    <div class="inventory-box">
+        <div class="inventory-title">ستوك المخزن</div>
+        <div class="inventory-value" style="color:blue"> @Model.Total_Amountpaid : المصاريف الخارجه </div>
+        <div class="inventory-value" style="color:blue">@Model.Total_AmountIn : المصاريف الداخل</div>
+    </div>
+
+    <div class="transactions-grid">
+        <div class="transaction-box" style="transform: translateY(0px);">
+            <h1 style="font-size:45px; text-align:center;" class="stat-title">الفواتير</h1>
+            <div class="transaction-item">
+                <span>إجمالي المبيعات (الإيرادات):</span>
+                <span>@Model.Total_AmountInvoice EGP</span>
+            </div>
+            <div class="transaction-item">
+                <span>إجمالي المدفوعات:</span>
+                <span>@Model.PaidInvoice EGP</span>
+            </div>
+            <div class="transaction-item">
+                <span>إجمالي المتبقي (يحتاج إلى تحصيل):</span>
+                <span class="highlight">@Model.remainingInvoice EGP</span>
+            </div>
+        </div>
+        <div class="transaction-box" style="transform: translateY(0px);">
+            <h1 style="font-size:45px; text-align:center;" class="stat-title">مدفوعات المشتريات</h1>
+            <div class="transaction-item">
+                <span>إجمالي المشتريات:</span>
+                <span>@Model.InvoiceValue EGP</span>
+            </div>
+            <div class="transaction-item">
+                <span>إجمالي المدفوعات:</span>
+                <span>@Model.PaidValue EGP</span>
+            </div>
+            <div class="transaction-item">
+                <span>إجمالي المتبقي (يحتاج إلى دفع):</span>
+                <span class="highlight">@Model.remaining EGP</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    document.querySelectorAll('.nav-button, .stat-box, .transaction-box').forEach(element => {
+        element.addEventListener('mouseenter', e => {
+            e.target.style.transform = e.target.classList.contains('nav-button')
+                ? 'translateY(-3px)'
+                : 'translateY(-5px)';
+        });
+
+        element.addEventListener('mouseleave', e => {
+            e.target.style.transform = 'translateY(0)';
+        });
+    });
+</script>
+
+<script src="~/js/admin.js"></script>
+<script src="~/html2pdf.js/html2pdf.bundle.min.js"></script>
+
+
+@section Scripts {
+    <script>
+
+    </script>
+}

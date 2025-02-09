@@ -1,0 +1,33 @@
+﻿body {
+   
+}
+header{
+    position:static !important;
+   
+}
+
+.container {
+    height: 100% !important;
+    background-color: white;
+    padding-right: 100px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    direction: rtl !important;
+}
+.invoiceimg {
+    width: 100%;
+    border-top-width: 10px;
+    margin:auto;
+}
+.textinvoice {
+    direction:rtl;
+    padding-top:20px 0 0 0;
+    
+}
+    .textinvoice p {
+        font-weight: 11500;
+        font-size:30px;
+    }
+.mystaticform{
+    padding:0 20px;
+}

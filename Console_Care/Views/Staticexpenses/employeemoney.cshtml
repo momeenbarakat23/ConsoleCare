@@ -1,0 +1,109 @@
+﻿@using Console_Care.ViewModel
+@model employeemoneyViewmodel
+
+@{
+    ViewData["Title"] = "employeemoney";
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>getdata</h1>
+<div class="mycontainer">
+
+
+    <div>
+        <h1>Customer</h1>
+        <hr />
+        <div class="admintext">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Employee)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Employee)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.salary)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.salary) EGP
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.incentive)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.incentive) EGP
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.predecessor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.predecessor) EGP
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.discount)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.discount) EGP
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.navsalary)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.navsalary) EGP
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class=" backgroundfrom">
+        <div class="col-md-4">
+            <form asp-action="employeemoney">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Employee" class="control-label"></label>
+                    <input asp-for="Employee" class="form-control" />
+                    <span asp-validation-for="Employee" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="salary" class="control-label"></label>
+                    <input asp-for="salary" class="form-control" />
+                    <span asp-validation-for="salary" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="incentive" class="control-label"></label>
+                    <input asp-for="incentive" class="form-control" />
+                    <span asp-validation-for="incentive" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="predecessor" class="control-label"></label>
+                    <input asp-for="predecessor" class="form-control" />
+                    <span asp-validation-for="predecessor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="discount" class="control-label"></label>
+                    <input asp-for="discount" class="form-control" />
+                    <span asp-validation-for="discount" class="text-danger"></span>
+                </div>
+               
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    @* <div>
+        <a asp-action="Edit" asp-route-id="@Model?.idofCustomer">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div> *@
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

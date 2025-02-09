@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "Swiper@11.0.0",
+      "destination": "wwwroot/Swiper/",
+      "files": [
+        "swiper-bundle.min.js",
+        "swiper-bundle.min.css"
+      ]
+    },
+    {
+      "library": "sweetalert2@11.15.3",
+      "destination": "wwwroot/sweetalert2/",
+      "files": [
+        "sweetalert2.min.js",
+        "sweetalert2.all.min.js"
+      ]
+    },
+    {
+      "library": "bootstrap-daterangepicker@3.0.5",
+      "destination": "wwwroot/bootstrap-daterangepicker/",
+      "files": [
+        "daterangepicker.min.js"
+      ]
+    },
+    {
+      "library": "moment.js@2.30.1",
+      "destination": "wwwroot/moment.js/"
+    },
+    {
+      "library": "html2pdf.js@0.10.2",
+      "destination": "wwwroot/html2pdf.js/",
+      "files": [
+        "html2pdf.bundle.min.js"
+      ]
+    },
+    {
+      "library": "datatables.net@2.1.8",
+      "destination": "wwwroot/datatables.net/",
+      "files": [
+        "dataTables.js"
+      ]
+    },
+    {
+      "library": "sweetalert2@11.15.5",
+      "destination": "wwwroot/sweetalert22/",
+      "files": [
+        "sweetalert2.min.js"
+      ]
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/jquery/",
+      "files": [
+        "jquery.slim.min.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+﻿@model Console_Care.ViewModel.ItineraryViewModel
+
+@{
+    ViewData["Title"] = "Editdata";
+}
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>getdata</h1>
+<div class="mycontainer">
+
+
+    <div>
+        <h1>Customer</h1>
+        <hr />
+        <div class="admintext">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NameOfcustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NameOfcustomer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Nameoftech)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Nameoftech)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.NameOfAssistant)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.NameOfAssistant)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.RemainingTeam)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RemainingTeam)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.VisitClassification)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.VisitClassification)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.typeofcustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.typeofcustomer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.VisitDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.VisitDate)
+                </dd>
+                
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.AddressOfcustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.AddressOfcustomer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Orderforcustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Orderforcustomer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PhoneOfcustomer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PhoneOfcustomer)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class=" backgroundfrom">
+        <div class="col-md-4">
+            <form asp-action="Editdata">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="FaultStatement" class="control-label"></label>
+                    <input asp-for="FaultStatement" class="form-control" />
+                    <span asp-validation-for="FaultStatement" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StatusOfOrder" class="control-label"></label>
+                    <select asp-for="StatusOfOrder" class="form-control">
+                        <option>@Model.StateOfOrderforcustomer</option>
+                        <option>الانتظار</option>
+                        <option>تتم الصيانه</option>
+                        <option>تمت الصيانه</option>
+                        <option>الغاء الصيانه</option>
+                    </select>
+                    <span asp-validation-for="StatusOfOrder" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Note" class="control-label"></label>
+                    <input asp-for="Note" class="form-control" />
+                    <span asp-validation-for="Note" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    @* <div>
+        <a asp-action="Edit" asp-route-id="@Model?.idofCustomer">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div> *@
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

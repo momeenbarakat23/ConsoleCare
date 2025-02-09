@@ -1,0 +1,301 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Console_Care
+build_property.RootNamespace = Console_Care
+build_property.ProjectDir = D:\all\console_care\Console_Care\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\all\console_care\Console_Care
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/all/console_care/Console_Care/Views/Admin/DeleteAllData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlQWxsRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Admin/getdata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZ2V0ZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Authanticat/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGFudGljYXRcTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Authanticat/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGFudGljYXRcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Banking/DeleteAllData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua2luZ1xEZWxldGVBbGxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Banking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/BuyingMaterials/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nTWF0ZXJpYWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/BuyingMaterials/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nTWF0ZXJpYWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/BuyingMaterials/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5aW5nTWF0ZXJpYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Cash/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Cash/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Cash/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Cash/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Closedays/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvc2VkYXlzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Closedays/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvc2VkYXlzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Closedays/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvc2VkYXlzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/CustomerDataBase/DetailsHallEffect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJEYXRhQmFzZVxEZXRhaWxzSGFsbEVmZmVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/CustomerDataBase/DetailsHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJEYXRhQmFzZVxEZXRhaWxzSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/CustomerDataBase/DetailsPsCafe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJEYXRhQmFzZVxEZXRhaWxzUHNDYWZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/CustomerDataBase/DetailsPsCafecontect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJEYXRhQmFzZVxEZXRhaWxzUHNDYWZlY29udGVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/CustomerDataBase/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJEYXRhQmFzZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Employee/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Employee/displayEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcZGlzcGxheUVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Employee/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Followup/EditData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sbG93dXBcRWRpdERhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Followup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sbG93dXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Invoice/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Invoice/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxEaXNwbGF5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Invoice/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Invoice/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Invoice/StaticInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxTdGF0aWNJbnZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/itinerary/Editdata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXRpbmVyYXJ5XEVkaXRkYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/itinerary/GetData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaXRpbmVyYXJ5XEdldERhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/MaterialsforEmployees/AddmaterialsEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzZm9yRW1wbG95ZWVzXEFkZG1hdGVyaWFsc0VtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/MaterialsforEmployees/EditmaterialsEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzZm9yRW1wbG95ZWVzXEVkaXRtYXRlcmlhbHNFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/MaterialsforEmployees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzZm9yRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Materials/addmaterial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzXGFkZG1hdGVyaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Materials/Edititem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzXEVkaXRpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Materials/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Other_expenses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJfZXhwZW5zZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Other_expenses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJfZXhwZW5zZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Other_expenses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJfZXhwZW5zZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Purchase_Payments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VfUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Purchase_Payments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VfUGF5bWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Purchase_Payments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VfUGF5bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Role/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Role/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Shared/admindashbord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGFkbWluZGFzaGJvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Shared/BankingDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhbmtpbmdEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/StaticAssets/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljQXNzZXRzXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/StaticAssets/Detials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljQXNzZXRzXERldGlhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/StaticAssets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljQXNzZXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/StaticAssets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljQXNzZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Staticexpenses/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljZXhwZW5zZXNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Staticexpenses/Detials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljZXhwZW5zZXNcRGV0aWFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Staticexpenses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljZXhwZW5zZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Staticexpenses/employeemoney.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljZXhwZW5zZXNcZW1wbG95ZWVtb25leS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Staticexpenses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGljZXhwZW5zZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/all/console_care/Console_Care/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5egozzu65z

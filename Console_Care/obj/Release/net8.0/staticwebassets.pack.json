@@ -1,0 +1,1721 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\Console_Care.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Console_Care.jmmzgyzbwv.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\Swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\Swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\Swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\Swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\bootstrap-daterangepicker\\daterangepicker.min.js",
+      "PackagePath": "staticwebassets\\bootstrap-daterangepicker\\daterangepicker.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\Banking.css",
+      "PackagePath": "staticwebassets\\css\\Banking.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\adminform.css",
+      "PackagePath": "staticwebassets\\css\\adminform.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\invoice.css",
+      "PackagePath": "staticwebassets\\css\\invoice.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\order.css",
+      "PackagePath": "staticwebassets\\css\\order.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\datatables.net\\datatables.js",
+      "PackagePath": "staticwebassets\\datatables.net\\datatables.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\html2pdf.js\\html2pdf.bundle.min.js",
+      "PackagePath": "staticwebassets\\html2pdf.js\\html2pdf.bundle.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\0a536b3d-2bf6-41d4-b790-969bae6a9cbe.png",
+      "PackagePath": "staticwebassets\\img\\0a536b3d-2bf6-41d4-b790-969bae6a9cbe.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\1294765.jpg",
+      "PackagePath": "staticwebassets\\img\\1294765.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\1357551.jpeg",
+      "PackagePath": "staticwebassets\\img\\1357551.jpeg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\3.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\4.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\418452542_7393939830663354_3069472954862387593_n.jpg",
+      "PackagePath": "staticwebassets\\img\\418452542_7393939830663354_3069472954862387593_n.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\419409096_7393939560663381_5031223543201873937_n.jpg",
+      "PackagePath": "staticwebassets\\img\\419409096_7393939560663381_5031223543201873937_n.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\435708048_122139972386187714_7179255880019166580_n.jpg",
+      "PackagePath": "staticwebassets\\img\\435708048_122139972386187714_7179255880019166580_n.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\481-4810872_hide-password-hide-show-password-icon-png-transparent.png",
+      "PackagePath": "staticwebassets\\img\\481-4810872_hide-password-hide-show-password-icon-png-transparent.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\5.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\6.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\7.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\83c9b385abe1edcb0efdb8d3f34f9d59.jpg",
+      "PackagePath": "staticwebassets\\img\\83c9b385abe1edcb0efdb8d3f34f9d59.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\Screenshot (2232).png",
+      "PackagePath": "staticwebassets\\img\\Screenshot (2232).png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\background.jpg",
+      "PackagePath": "staticwebassets\\img\\background.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\bg2 (2).jpg",
+      "PackagePath": "staticwebassets\\img\\bg2 (2).jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\bg2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg2.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\blurred_prince_of_persia.jpeg",
+      "PackagePath": "staticwebassets\\img\\blurred_prince_of_persia.jpeg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\cat-space.gif",
+      "PackagePath": "staticwebassets\\img\\cat-space.gif"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\con3s.jpg",
+      "PackagePath": "staticwebassets\\img\\con3s.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\cons.jpg",
+      "PackagePath": "staticwebassets\\img\\cons.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\dashlogo.jpg",
+      "PackagePath": "staticwebassets\\img\\dashlogo.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\e4fd2af9-1cfa-4c9b-8ffe-222c28111744.png",
+      "PackagePath": "staticwebassets\\img\\e4fd2af9-1cfa-4c9b-8ffe-222c28111744.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\elsa7.jpg",
+      "PackagePath": "staticwebassets\\img\\elsa7.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\hall.jpg",
+      "PackagePath": "staticwebassets\\img\\hall.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\hide.jpg",
+      "PackagePath": "staticwebassets\\img\\hide.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\imageedit_1_9467993578.jpg",
+      "PackagePath": "staticwebassets\\img\\imageedit_1_9467993578.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\images.png",
+      "PackagePath": "staticwebassets\\img\\images.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\images1.png",
+      "PackagePath": "staticwebassets\\img\\images1.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\instapay.jpg",
+      "PackagePath": "staticwebassets\\img\\instapay.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\img\\logo.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\motab3a.jpg",
+      "PackagePath": "staticwebassets\\img\\motab3a.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\nng7.jpg",
+      "PackagePath": "staticwebassets\\img\\nng7.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\png-transparent-facebook-logo-logo-facebook-icon-facebook-logo-brand-social-network-scalable-vector-graphics.png",
+      "PackagePath": "staticwebassets\\img\\png-transparent-facebook-logo-logo-facebook-icon-facebook-logo-brand-social-network-scalable-vector-graphics.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\preview-show-interface-icon-free-vector.jpg",
+      "PackagePath": "staticwebassets\\img\\preview-show-interface-icon-free-vector.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r1.jpg",
+      "PackagePath": "staticwebassets\\img\\r1.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r10.jpg",
+      "PackagePath": "staticwebassets\\img\\r10.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r2.jpg",
+      "PackagePath": "staticwebassets\\img\\r2.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r3.jpg",
+      "PackagePath": "staticwebassets\\img\\r3.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r4.jpg",
+      "PackagePath": "staticwebassets\\img\\r4.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r5.jpg",
+      "PackagePath": "staticwebassets\\img\\r5.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r6.jpg",
+      "PackagePath": "staticwebassets\\img\\r6.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r7.jpg",
+      "PackagePath": "staticwebassets\\img\\r7.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r8.jpg",
+      "PackagePath": "staticwebassets\\img\\r8.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\r9.jpg",
+      "PackagePath": "staticwebassets\\img\\r9.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\seana.jpg",
+      "PackagePath": "staticwebassets\\img\\seana.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\sha7n.jpg",
+      "PackagePath": "staticwebassets\\img\\sha7n.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\show.jpg",
+      "PackagePath": "staticwebassets\\img\\show.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\show.png",
+      "PackagePath": "staticwebassets\\img\\show.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\slider1.jpg",
+      "PackagePath": "staticwebassets\\img\\slider1.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\slider2.jpg",
+      "PackagePath": "staticwebassets\\img\\slider2.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\twsel.jpg",
+      "PackagePath": "staticwebassets\\img\\twsel.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\vcash.jpg",
+      "PackagePath": "staticwebassets\\img\\vcash.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\ادارهالتطوير.png",
+      "PackagePath": "staticwebassets\\img\\ادارهالتطوير.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\الاداره.png",
+      "PackagePath": "staticwebassets\\img\\الاداره.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\الاقساط.png",
+      "PackagePath": "staticwebassets\\img\\الاقساط.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\الايجار.png",
+      "PackagePath": "staticwebassets\\img\\الايجار.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\التشغيل.png",
+      "PackagePath": "staticwebassets\\img\\التشغيل.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\السحابات.png",
+      "PackagePath": "staticwebassets\\img\\السحابات.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\تسويق.png",
+      "PackagePath": "staticwebassets\\img\\تسويق.png"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\img\\صورة واتساب بتاريخ 2024-12-13 في 11.06.02_67dcfda3.jpg",
+      "PackagePath": "staticwebassets\\img\\صورة واتساب بتاريخ 2024-12-13 في 11.06.02_67dcfda3.jpg"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\js\\Invoice.js",
+      "PackagePath": "staticwebassets\\js\\Invoice.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\js\\admin.js",
+      "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\js\\table2excel.js",
+      "PackagePath": "staticwebassets\\js\\table2excel.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\af.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\af.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\af.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\af.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-dz.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-dz.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-dz.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-kw.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-kw.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-kw.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-kw.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ly.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ly.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ly.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ly.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ma.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ma.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ma.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ma.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ps.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ps.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-ps.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-ps.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-sa.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-sa.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-sa.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-sa.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-tn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-tn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar-tn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar-tn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ar.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ar.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\az.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\az.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\az.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\az.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\be.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\be.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\be.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\be.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bg.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bg.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bg.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bg.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bm.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bm.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bm.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bm.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bn-bd.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bn-bd.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bn-bd.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bn-bd.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\br.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\br.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\br.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\br.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bs.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bs.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\bs.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\bs.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ca.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ca.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ca.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ca.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cs.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cs.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cs.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cs.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cv.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cv.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cv.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cv.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cy.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cy.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\cy.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\cy.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\da.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\da.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\da.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\da.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de-at.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de-at.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de-at.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de-at.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de-ch.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de-ch.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de-ch.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de-ch.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\de.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\de.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\dv.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\dv.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\dv.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\dv.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\el.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\el.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\el.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\el.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-au.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-au.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-au.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-au.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-ca.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-ca.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-ca.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-ca.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-gb.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-gb.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-gb.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-gb.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-ie.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-ie.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-ie.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-ie.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-il.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-il.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-il.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-il.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-in.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-in.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-in.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-in.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-nz.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-nz.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-nz.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-nz.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-sg.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-sg.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\en-sg.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\en-sg.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\eo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\eo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\eo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\eo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-do.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-do.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-do.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-do.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-mx.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-mx.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-mx.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-mx.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-us.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-us.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es-us.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es-us.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\es.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\es.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\et.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\et.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\et.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\et.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\eu.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\eu.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\eu.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\eu.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fa.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fa.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fa.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fa.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fi.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fi.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fi.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fi.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fil.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fil.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fil.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fil.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr-ca.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr-ca.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr-ca.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr-ch.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr-ch.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr-ch.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr-ch.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fy.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fy.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\fy.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\fy.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ga.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ga.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ga.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ga.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gd.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gd.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gd.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gd.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gom-deva.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gom-deva.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gom-deva.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gom-deva.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gom-latn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gom-latn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gom-latn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gom-latn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gu.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gu.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\gu.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\gu.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\he.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\he.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\he.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\he.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hi.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hi.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hi.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hi.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hu.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hu.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hu.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hu.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hy-am.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hy-am.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\hy-am.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\hy-am.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\id.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\id.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\id.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\id.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\is.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\is.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\is.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\is.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\it-ch.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\it-ch.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\it-ch.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\it-ch.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\it.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\it.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\it.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\it.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ja.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ja.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ja.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ja.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\jv.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\jv.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\jv.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\jv.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ka.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ka.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ka.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ka.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\kk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\kk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\kk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\kk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\km.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\km.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\km.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\km.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\kn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\kn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\kn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\kn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ko.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ko.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ko.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ko.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ku-kmr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ku-kmr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ku-kmr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ku-kmr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ku.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ku.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ku.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ku.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ky.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ky.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ky.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ky.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lb.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lb.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lb.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lb.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lt.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lt.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lt.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lt.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lv.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lv.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\lv.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\lv.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\me.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\me.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\me.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\me.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mi.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mi.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mi.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mi.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ml.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ml.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ml.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ml.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ms-my.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ms-my.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ms-my.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ms-my.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ms.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ms.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ms.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ms.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mt.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mt.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\mt.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\mt.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\my.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\my.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\my.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\my.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nb.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nb.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nb.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nb.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ne.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ne.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ne.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ne.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nl-be.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nl-be.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nl-be.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nl-be.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\nn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\nn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\oc-lnc.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\oc-lnc.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\oc-lnc.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\oc-lnc.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pa-in.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pa-in.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pa-in.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pa-in.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pt-br.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pt-br.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pt-br.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pt-br.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pt.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pt.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\pt.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\pt.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ro.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ro.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ro.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ro.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ru.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ru.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ru.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ru.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sd.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sd.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sd.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sd.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\se.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\se.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\se.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\se.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\si.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\si.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\si.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\si.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sq.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sq.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sq.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sq.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sr-cyrl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sr-cyrl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sr-cyrl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ss.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ss.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ss.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ss.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sv.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sv.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sv.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sv.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sw.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sw.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\sw.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\sw.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ta.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ta.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ta.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ta.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\te.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\te.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\te.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\te.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tet.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tet.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tet.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tet.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tg.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tg.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tg.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tg.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\th.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\th.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\th.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\th.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tl-ph.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tl-ph.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tl-ph.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tl-ph.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tlh.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tlh.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tlh.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tlh.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tr.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tr.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tr.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tr.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzl.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzl.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzl.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzl.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzm-latn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzm-latn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzm-latn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzm-latn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzm.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzm.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\tzm.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\tzm.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ug-cn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ug-cn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ug-cn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ug-cn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ur.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ur.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\ur.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\ur.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uz-latn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uz-latn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uz-latn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uz-latn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uz.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uz.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\uz.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\uz.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\vi.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\vi.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\vi.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\vi.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\x-pseudo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\x-pseudo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\x-pseudo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\x-pseudo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\yo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\yo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\yo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\yo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-cn.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-cn.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-cn.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-hk.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-hk.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-hk.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-hk.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-mo.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-mo.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-mo.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-mo.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-tw.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\locale\\zh-tw.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\locale\\zh-tw.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment-with-locales.js",
+      "PackagePath": "staticwebassets\\moment.js\\moment-with-locales.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment-with-locales.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\moment-with-locales.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment-with-locales.min.js.map",
+      "PackagePath": "staticwebassets\\moment.js\\moment-with-locales.min.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment.js",
+      "PackagePath": "staticwebassets\\moment.js\\moment.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment.min.js",
+      "PackagePath": "staticwebassets\\moment.js\\moment.min.js"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\moment.js\\moment.min.js.map",
+      "PackagePath": "staticwebassets\\moment.js\\moment.min.js.map"
+    },
+    {
+      "Id": "D:\\all\\console_care\\Console_Care\\wwwroot\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Console_Care.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Console_Care.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.Console_Care.props",
+      "PackagePath": "build\\Console_Care.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Console_Care.props",
+      "PackagePath": "buildMultiTargeting\\Console_Care.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.Console_Care.props",
+      "PackagePath": "buildTransitive\\Console_Care.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

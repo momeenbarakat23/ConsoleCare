@@ -1,0 +1,2 @@
+D:\all\Console_Care\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json
+D:\all\Console_Care\BlazorApp1\obj\Debug\net8.0\staticwebassets.build.json

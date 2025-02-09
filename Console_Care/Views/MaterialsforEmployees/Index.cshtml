@@ -1,0 +1,132 @@
+﻿@using Console_Care.ViewModel
+@model List<MaterialsEmployeesviewmodel>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+@{
+    
+
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.EmployeesName);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.materialName);
+
+    }
+    var list3 = new HashSet<DateTime>();
+    foreach (var item in Model)
+    {
+        list3.Add(item.Date);
+
+    }
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+
+    <script src="~/moment.js/moment.min.js"></script>
+    <script src="~/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+}
+
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filtername" onchange="filter2()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>material</label>
+            <select class="form-control" id="filterps" onchange="filter2()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>date</label>
+            <input type="date"  class="form-control" id="filterCity" onchange="filter2()" />
+
+        </div>
+       
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>مواد مع الفنين</h2>
+        </div>
+        <div>
+            <a asp-action="AddmaterialsEmployee" class="btn btn-success ">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">اسم الفني</th>
+                            <th class="tblcoltext ">اسم الخامه</th>
+                            <th class="tblcoltext">الكميه المستعمله</th>
+                            <th class="tblcoltext">كل الكميه</th>
+                            <th class="tblcoltext">الباقي</th>
+                            <th class="tblcoltext">التاريخ</th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="order namesearch">
+                                <td><a  style="text-decoration:none; color:white">@item.EmployeesName </a></td>
+                                <td><a style="text-decoration:none; color:white">@item.materialName </a></td>
+                                <td>@item.QuantityUsed</td>
+                                <td>@item.Quantities</td>
+                                <td>@item.calcquntityused</td>
+                                <td>@item.Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                <td>
+                                    <a asp-route-id="@item.id" class="btn btn-secondary" asp-action="EditmaterialsEmployee">Edit</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger">Delete</a> |
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+@section Scripts{
+  
+    
+}

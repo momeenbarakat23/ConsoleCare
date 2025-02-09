@@ -1,0 +1,117 @@
+﻿@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+
+}
+
+<h1>getdata</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:50%;padding-right: 0px;padding-left: 0px;">
+        @* <div class="pricecard">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">إجمالى المصروفات الثابته</div>
+                <div class="card-body">
+                    <p class="card-header"><input id="invoice-total" type="number" value="@ViewBag.total" style="width: 100%; text-align: center; border: none; background-color: transparent; color: white;" />EGP</p>
+                </div>
+            </div>
+
+        </div> *@
+        <section class="">
+            <h2 class="title"></h2>
+            <div class="mycontent">
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="إدارة_التطوير">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/ادارهالتطوير.png" style="width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> إدارة التطوير </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="الإدارة">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/الاداره.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> الإدارة </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="التسويق">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/تسويق.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> التسويق </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="الحسابات">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/السحابات.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> الحسابات </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="التشغيل">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/التشغيل.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> قسم التشغيل </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="الإيجار">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/الايجار.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> الإيجار </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="Staticexpenses" asp-route-NameOfDepartment="الأقساط">
+                    <div class="mycard" style="width:300px;">
+                        <div class="icon">
+                            <img src="~/img/الاقساط.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> الأقساط </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</div>

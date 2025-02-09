@@ -1,0 +1,26 @@
+﻿@page "/counter"
+@using Console_Care.Models
+@using Microsoft.EntityFrameworkCore
+@inject Console_Care.Models.Appdbcontext appdbcontext;
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @IncrementCount()</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+
+    public async Task<Admin> IncrementCount()
+    {
+        var c = new Admin();
+        var data =await appdbcontext.Admins.SingleOrDefaultAsync(x => x.Id == 39);
+        c.AdminName = data.AdminName;
+
+
+        return c;
+    }
+}

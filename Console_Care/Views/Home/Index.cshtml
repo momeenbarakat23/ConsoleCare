@@ -1,0 +1,239 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section css {
+    <link rel="stylesheet" href="~/Swiper/swiper-bundle.min.css" />
+
+
+
+}
+
+<section class="main">
+    <div class="mytext">
+        <h2>ترحب بكم </h2>
+        <span>Console Care</span>
+        <p>we repair we care</p>
+        <h3>
+            نقدم خدمات صيانة شاملة وسريعة لأجهزة الألعاب الإلكترونية، مع ضمان أعلى مستويات الجودة والراحة. فريقنا المدرب والمحترف يستخدم أحدث التقنيات لتلبية احتياجات عشاق الألعاب، بهدف تعزيز تجربة اللعب وجعلها مستمرة دون انقطاع، وبناء علاقة ثقة طويلة الأمد مع عملائنا.
+        </h3>
+        <a asp-controller="Order" asp-action="Create" class="main-btn">Order Now</a>
+    </div>
+    <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a  ><img src="~/Img/slider1.jpg" alt="Alternate Text" /></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="~/Img/3.jpg" alt="Alternate Text" /></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="~/Img/4.jpg" alt="Alternate Text" /></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="~/Img/5.jpg" alt="Alternate Text" /></a>
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+</section> 
+<section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="mycontent">
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/seana.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> صيانة </h3>
+                <p>
+                    مع كونسول كير ضمان بعد الصيانة مش مجرد كلام.
+                    أي مشكلة تانية ممكن تظهر بعد الصيانة؟
+                    مش هنسيبك لوحدك، ضماننا يشمل كل أنواع الصيانة وقطع الغيار كمان
+
+                    وبنكلمك نتأكد من ان مفيش أي مشاكل معاك طول الوقت.
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/twsel.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> الاحتلال</h3>
+                <p>
+                    كونسول كير مبقتش في القاهرة بس كونسول كير بقت في كل مصر دلوقتي 
+                    لو أنت خارج القاهرة أو الجيزة
+                    وفرنا عليك أسهل وأأمن طريقة لشحن دراعك من باب بيتك
+                    بدون مشاوير وبدون تعب وفي الآخر هيوصلك دراعك بعد صيانته لحد بيتك من تاني
+                    مع كونسول كير متشلش هم الصيانة تاني..
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/hall.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> Hall Effect</h3>
+                <p>
+                    ال Aim بايظ منك، طب وانت بتعمل التشكيلة الانالوج بيجري منك علي الفرقة كلها؟ مشاكل الانالوج مبتخلصش
+                    وكونسول كير جابتلك الحل النهائي لمشكلة ال Stick Drift
+                    ال Hall Effect analog هيحللك كل مشاكلك وينقل متعة اللعب للفل تاني.
+                    كلمنا أو ابعتلنا رسالة عشان تعرف اكتر عن ال Hall Effect..
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/nng7.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> شركائك في نجاحك</h3>
+                <p>
+                    نجاحك من نجاحنا وسمعة مكانك من أولويتنا، عشان كده كونسول كير بتوفرلك كل خدمات الصيانة لمكانك بأفضل الأسعار،
+                    وبضمان على جميع خدمات الصيانة وفي أسرع وقت بنكون عندك وبتم عملية الصيانة في 30 دقيقة.
+                    عشان تفضل أفضل بلايستيشن كافية وتفضل أحلى مكان للمة الجايمرز.
+                    اتصل بينا أو ابعتلنا رسالة وخليك مع خصومات كونسول كير لمحلات وأماكن البلايستيشن كافيه 
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/sha7n.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> بطاريه</h3>
+                <p>
+                    عندك مشكله عدم شحن في الدراع؟ 
+                    <br />                   مش مشكلة حلها بسيط كلمنا عشان نقدر نعرف منك عن نوع المشكله ونجيلك في اسرع وقت لحلها ,, او ابعتلنا رسالة عشان تعرف اكتر عن الصيانه و الحجز 
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/elsa7.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> الصح أيه؟</h3>
+                <p>
+                    اكتر من 70% من اللعيبة بتستخدم اجهزة ال ps5 واقفة و ده على المدي الطويل بيسبب ضرر للمعالج عشان بيخلى ال thermal paste ميشتغلش باعلى كفاءة
+                    عشان كده ال thermal paste اول حاجة بتتغير فى الصيانة الدورية الي بنقدمها في كونسول كير 
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/cons.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> Console Care</h3>
+                <p>
+                    من و احنا اطفال و احنا جيمرز 👶🎮
+
+                    عشان كده لما بقينا متخصصين فى الصيانة احنا حسينا بيك و بكل مشاكل الاجهزة من تهنيج او بطء او الدراعات كان كل ده عدى علينا قبل كده و عارفين ازاى نحله
+
+                    عن طريق فريقنا المتخصص المدرب علي اعلي مستوي عشان يحللك كل مشاكلك في البيت وفي اسرع وقت ممكن
+
+                    ابعتلنا رسالة او كلمنا فى اي وقت عشان تعرف تفاصيل اكتر للحجز
+                </p>
+            </div>
+        </div>
+        <div class="mycard">
+            <div class="icon">
+                <img src="~/img/motab3a.jpg" alt="Alternate Text" />
+            </div>
+            <div class="info">
+                <h3> بنفكرك ديما</h3>
+                <p>
+                    -هنفكرك بمواعيد الصيانة الدورية و تنضيف الاجهزة عشان تفضل بكفاتها على طول
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+    <h2 class="title" style="color:white;">reviews</h2>
+    <div class="slider" style="
+            --width:1800px;
+            --height:1500;
+            --quantity:10;">
+        <div class="list">
+            <div class="item" style="--position :1"><img src="~/img/r1.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :2"><img src="~/img/r2.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :3"><img src="~/img/r3.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :4"><img src="~/img/r4.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :5"><img src="~/img/r5.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :6"><img src="~/img/r6.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :7"><img src="~/img/r7.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :8"><img src="~/img/r8.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :9"><img src="~/img/r9.jpg" alt="Alternate Text" /></div>
+            <div class="item" style="--position :10"><img src="~/img/r10.jpg" alt="Alternate Text" /></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="cards" id="contact">
+    <h2 class="title">Contact Us</h2>
+    <div class="mycontent">
+        <div class="mycard">
+            <a href="https://www.facebook.com/ConsoleCarePs">
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <div class="info">
+                    <h3 > Facebook </h3>
+                </div>
+            </a>
+
+        </div>
+        <div class="mycard">
+            <a href="https://www.instagram.com/_consolecare/?hl=ar">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="info">
+                    <h3> Instegram </h3>
+                </div>
+            </a>
+        </div>
+        <div class="mycard">
+            <a href="https://api.whatsapp.com/send?phone=201016601650">
+                <div class="icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="info">
+                    <h3> WhatsApp </h3>
+                </div>
+            </a>
+        </div>
+</section>
+
+@section Scripts {
+    <script src="~/Swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true
+        },
+        autoplay: {
+        delay: 2500,
+        },
+        loop: true,
+        });    
+    </script>
+    @if (TempData["mes"] is not null)
+    {
+       <script>
+            window.close(myalert())
+       </script> 
+}
+}

@@ -1,0 +1,181 @@
+﻿@model IEnumerable<Console_Care.Models.CustomerDataBases>
+@{
+    ViewData["Title"] = "DetailsHallEffect";
+
+    var x = -1;
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.Name);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Ps4OrPs5);
+
+    }
+    var list3 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list3.Add(item.city);
+
+    }
+    var list4 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list4.Add(item.TypeOfCustomer);
+
+    }
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+
+}
+@if ((User.IsInRole("accounting")) || (User.IsInRole("superadmin")))
+{
+    <partial>
+        @Html.Partial("BankingDashBoard");
+    </partial>
+}
+else
+{
+    <partial>
+        @Html.Partial("admindashbord");
+    </partial>
+}
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filtername" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>Ps4/Ps5</label>
+            <select class="form-control" id="filterps" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>city</label>
+            <select class="form-control" id="filterCity" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list3)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>TypeOfCustomer</label>
+            <select class="form-control" id="filterTypeOfCustomer" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list4)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>قاعده بيانات عملاء المنزلي</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">Name</th>
+                            <th class="tblcoltext ">phone</th>
+                            <th class="tblcoltext">City</th>
+                            <th class="tblcoltext">Address</th>
+                            <th class="tblcoltext">Type Of Customer</th>
+                            <th class="tblcoltext">Ps4 / Ps5</th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            @if (true)
+                            {
+                                x++;
+                            }
+                            if (ViewBag.remaining[x] == 0)
+                            {
+
+
+                                <tr class="order namesearch">
+                                    @if ((User.IsInRole("accounting")) || (User.IsInRole("superadmin")))
+                                    {
+                                        <td><a asp-action="Index" asp-controller="Invoice" asp-route-id="@item.id" style="text-decoration:none; color:white">@item.Name </a></td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.Name</td>
+
+                                    }
+                                    <td>@item.Phone</td>
+                                    <td>@item.city</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.Ps4OrPs5</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr class="order namesearch" style="background-color:red;">
+                                    @if ((User.IsInRole("accounting")) || (User.IsInRole("superadmin")))
+                                    {
+                                        <td><a asp-action="Index" asp-controller="Invoice" asp-route-id="@item.id" style="text-decoration:none; color:white">@item.Name </a></td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.Name</td>
+
+                                    }
+                                    <td>@item.Phone</td>
+                                    <td>@item.city</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.TypeOfCustomer</td>
+                                    <td>@item.Ps4OrPs5</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>

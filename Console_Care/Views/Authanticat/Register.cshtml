@@ -1,0 +1,84 @@
+﻿@using Console_Care.ViewModel
+@model RegisterViewModel
+
+@{
+    var data = User.Claims;
+    
+    var x = 5;
+}
+@section css{
+    <link href="~/css/order.css" rel="stylesheet" /> 
+    <style>
+        .passicon{
+            right:0; 
+            left:95%;
+        }
+        
+</style>
+}
+
+<h1>Create</h1>
+
+<h4>OrderByCustomer</h4>
+<hr />
+<div class="orderform">
+    <div class="col-md-4">
+        <form asp-action="Register" method="post">
+            
+            <div class="input-box">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control input-field" />
+                <span asp-validation-for="UserName" class="text-danger "></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control input-field" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control input-field" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control input-field" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="city" class="control-label"></label>
+                <input asp-for="city" class="form-control input-field" />
+                <span asp-validation-for="city" class="text-danger"></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="Password" class="control-label"></label>
+                <div class="password">
+                    <img src="~/img/images1.png" onclick="pass()" style="right:0; left:90%"; class="passicon" id="passicon" alt="Alternate Text" />
+                    <input asp-for="Password" id="password" class="form-control" icon="showpass" />
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group input-box">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <div class="password">
+                    <img src="~/img/show.png" onclick="passconfirm()" class="passicon" style="right:0; left:90%;" id="passiconconfirm" alt="Alternate Text" />
+                    <input asp-for="ConfirmPassword" id="passwordconfirm" class="form-control" icon="showpass" />
+                </div>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group input-box">
+                <input type="submit" value="Register" class=" btn-success form-control" />
+                <hr />
+                <a asp-action="LogIn" class="btn btn-dark form-control">LogIn</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

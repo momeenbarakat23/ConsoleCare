@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "DeleteAllData";
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>DeleteAllData</h1>
+<div class="mycontainer">
+
+    <div class=" Deleteform">
+        <div class="col-md-4">
+            <form asp-action="DeleteAllDataconferm">
+                <h1 style="color:red">هل انت متأكد؟</h1>
+                <h2>سوف تحذف  كلا من خط السير و الطلبات و المتابعات الرجاء تحميل جميع البيانات قبل الحذف</h2>
+                <input type="submit" value=" حذف جميع البيانات"  class="btn-lg btn btn-danger " /> 
+            </form>
+        </div>
+    </div>
+</div>

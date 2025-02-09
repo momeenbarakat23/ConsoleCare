@@ -1,0 +1,127 @@
+﻿@using Console_Care.ViewModel
+@model adminViewModel
+
+@{
+    ViewData["Title"] = "getdata";
+    var dropdownlist = new SelectList(ViewBag.nameofemp);
+}
+
+@section css{
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>getdata</h1>
+<div class="mycontainer">
+
+
+    <div >
+        <h1>Customer</h1>
+        <hr />
+        <div class="admintext">
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.NameCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.NameCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.PhoneCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.TypeOfCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.TypeOfCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Ps4OrPs5)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Ps4OrPs5)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.AddressCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.AddressCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.cityCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.cityCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.OrderCustomer)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.OrderCustomer)
+            </dd>
+            <dt class = "col-sm-2">
+                حاله طلب العميل
+            </dt>
+                <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StateOfOrderCustomer)
+            </dd>
+        </dl>
+        </div>
+    </div>
+    <div class=" backgroundfrom">
+        <div class="col-md-4">
+            <form asp-action="AddData">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="VisitClassification" class="control-label"></label>
+                    <input asp-for="VisitClassification" class="form-control" />
+                    <span asp-validation-for="VisitClassification" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="VisitDate" class="control-label"></label>
+                    <input asp-for="VisitDate" class="form-control" />
+                    <span asp-validation-for="VisitDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NameOfTechnician" class="control-label"></label>
+                    <select asp-items="dropdownlist" asp-for="NameOfTechnician" class="form-control" id="nameoftech">
+                        <option value="0" selected>select</option>
+                    </select>
+                    <span asp-validation-for="NameOfTechnician" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NameOfAssistant" class="control-label"></label>
+                    <select asp-items="dropdownlist" asp-for="NameOfAssistant" class="form-control" id="nameoftech">
+                        <option value="0" selected>select</option>
+                    </select>
+                    <span asp-validation-for="NameOfAssistant" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="RemainingTeam" class="control-label"></label>
+                    <input asp-for="RemainingTeam" class="form-control" />
+                    <span asp-validation-for="RemainingTeam" class="text-danger"></span>
+                </div>
+         
+                <div class="form-group">
+                    <label asp-for="NotesToMaintenanceTeam" class="control-label"></label>
+                    <input asp-for="NotesToMaintenanceTeam" class="form-control" />
+                    <span asp-validation-for="NotesToMaintenanceTeam" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="RouteDistributionOfficer" class="control-label"></label>
+                    <input asp-for="RouteDistributionOfficer" class="form-control" />
+                    <span asp-validation-for="RouteDistributionOfficer" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="VisitStatus" class="control-label"></label>
+                    <input asp-for="VisitStatus" class="form-control" />
+                    <span asp-validation-for="VisitStatus" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create"  class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

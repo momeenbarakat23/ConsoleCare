@@ -1,0 +1,58 @@
+﻿@using Console_Care.ViewModel
+@model RegisterRoleViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    var dowenlist = new SelectList(ViewBag.roles);
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>AddCash</h1>
+<div class="mycontainer" style="margin-left:0px;">
+    <div class=" Deleteform " style="width:100%">
+
+        <section class="">
+            <h2 class="title" style="color:white;">AddEmployee</h2>
+            <form asp-action="Register" style="justify-items: center;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <div class="password">
+                        <img src="~/img/images1.png" onclick="pass()" class="passicon" id="passicon" alt="Alternate Text" />
+                        <input asp-for="Password" id="password" class="form-control" icon="showpass" />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                  
+                </div>
+                <div class="form-group">
+                    <label asp-for="PasswordConfirm" class="control-label"></label>
+                    <div class="password">
+                        <img src="~/img/images1.png" onclick="passconfirm()" class="passicon" id="passiconconfirm" alt="Alternate Text" />
+                        <input asp-for="PasswordConfirm" id="passwordconfirm" class="form-control" icon="showpass" />
+                    </div>
+                    <span asp-validation-for="PasswordConfirm" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="RoleName" class="control-label"></label>
+                    <select asp-for="RoleName" asp-items="dowenlist" class="form-control" ></select>
+                    <span asp-validation-for="RoleName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

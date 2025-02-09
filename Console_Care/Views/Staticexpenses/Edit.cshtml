@@ -1,0 +1,124 @@
+﻿@model Console_Care.Models.static_expenses
+
+@{
+    ViewData["Title"] = "Add";
+    var list = new List<string>() { "إدارة_التطوير", "التسويق", "الإدارة", "الحسابات", "التشغيل", "الإيجار", "الأقساط", };
+    var downlist = new SelectList(list);
+}
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+<h1>AddCash</h1>
+<div class="mycontainer" style="margin-left:0px;">
+    <div class=" Deleteform " style="width:100%">
+
+        <section class="">
+            <h2 class="title" style="color:white;">تعديل مصروفات ثابته</h2>
+            <form asp-action="Edit" style="justify-items: center;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="NameOfDepartment" class="control-label"></label>
+                    <select asp-for="NameOfDepartment" asp-items="downlist" class="form-control">
+                        <option value="0">Select</option>
+                    </select>
+                    <span asp-validation-for="NameOfDepartment" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="typeofcash" class="control-label"></label>
+                    <select class="form-control" asp-for="typeofcash" id="typeofcust">
+                        <option>@Model.typeofcash</option>
+                        <option value="VodafoneCash">VodafoneCash</option>
+                        <option value="عهده">عهده</option>
+                        <option value="Instapay">Instapay</option>
+                        <option value="الخزنه">الخزنه</option>
+                    </select>
+                    <span asp-validation-for="typeofcash" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Employee" class="control-label"></label>
+                    <input asp-for="Employee" class="form-control" />
+                    <span asp-validation-for="Employee" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="January" class="control-label"></label>
+                    <input asp-for="January" class="form-control" />
+                    <span asp-validation-for="January" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="February" class="control-label"></label>
+                    <input asp-for="February"  class="form-control" />
+                    <span asp-validation-for="February" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="March" class="control-label"></label>
+                    <input asp-for="March" class="form-control" />
+                    <span asp-validation-for="March" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="April" class="control-label"></label>
+                    <input asp-for="April"  class="form-control" />
+                    <span asp-validation-for="April" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="May" class="control-label"></label>
+                    <input asp-for="May" class="form-control" />
+                    <span asp-validation-for="May" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="June" class="control-label"></label>
+                    <input asp-for="June"  class="form-control" />
+                    <span asp-validation-for="June" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="July" class="control-label"></label>
+                    <input asp-for="July"  class="form-control" />
+                    <span asp-validation-for="July" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="August" class="control-label"></label>
+                    <input asp-for="August"  class="form-control" />
+                    <span asp-validation-for="August" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="September" class="control-label"></label>
+                    <input asp-for="September"  class="form-control" />
+                    <span asp-validation-for="September" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="October" class="control-label"></label>
+                    <input asp-for="October"  class="form-control" />
+                    <span asp-validation-for="October" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="November" class="control-label"></label>
+                    <input asp-for="November"  class="form-control" />
+                    <span asp-validation-for="November" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="December" class="control-label"></label>
+                    <input asp-for="December"  class="form-control" />
+                    <span asp-validation-for="December" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Target" class="control-label"></label>
+                    <input asp-for="Target" class="form-control" />
+                    <span asp-validation-for="Target" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="salary" class="control-label"></label>
+                    <input asp-for="salary" class="form-control" />
+                    <span asp-validation-for="salary" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateTime" class="control-label"></label>
+                    <input asp-for="DateTime" class="form-control" />
+                    <span asp-validation-for="DateTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

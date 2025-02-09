@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Console_Care.Models.Closeday>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+}
+
+<partial>
+    @Html.Partial("BankingDashBoard");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>date</label>
+            <input type="date" class="form-control" id="filterdate" onchange="filter1()" />
+        </div>
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>تقفيل اليوم</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+        <div>
+            <a asp-action="Create" class="btn btn-success">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Origins)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Date)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Cash)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Sales)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.PaidSales)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Remainingsales)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Procurement)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.PaidPurchases)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Remainingpurchases)</th>
+                            <th class="tblcoltext ">@Html.DisplayNameFor(model => model.Expenses)</th>
+                            <th class="tblcoltext"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="order namesearch">
+                                <td>@item.Origins</td>
+                                <td>@item.Date.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                <td>@item.Cash</td>
+                                <td>@item.Sales</td>
+                                <td>@item.PaidSales</td>
+                                <td>@item.Remainingsales</td>
+                                <td>@item.Procurement</td>
+                                <td>@item.PaidPurchases</td>
+                                <td>@item.Remainingpurchases</td>
+                                <td>@item.Expenses</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>|
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>

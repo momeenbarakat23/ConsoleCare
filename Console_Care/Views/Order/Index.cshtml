@@ -1,0 +1,180 @@
+﻿@model IEnumerable<Console_Care.Models.Customer>
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+
+    }
+
+@{
+   
+
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.Name);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Ps4OrPs5);
+
+    }
+    var list3 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list3.Add(item.city);
+
+    }
+    var list4 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list4.Add(item.StateOfOrder);
+
+    }
+}
+@section css{
+    <link href="~/css/admin.css" rel="stylesheet" />
+    
+}
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filtername" onchange="filterorder()">
+                <option value="0" >--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }       
+            </select>
+        
+        </div>
+        <div class="filterlist">
+            <label>Ps4/Ps5</label>
+            <select class="form-control" id="filterps" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>city</label>
+            <select class="form-control" id="filterCity" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list3)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>حاله الطلب</label>
+            <select class="form-control" id="filterTypeOfCustomer" onchange="filterorder()">
+                <option value="0">--select--</option>
+                @foreach (var item in list4)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>الطلبات</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">الاسم</th>
+                            <th class="tblcoltext ">الرقم</th>
+                            <th class="tblcoltext">المدينه</th>
+                            <th class="tblcoltext">العنوان</th>
+                            <th class="tblcoltext">نوع العميل</th>
+                            <th class="tblcoltext">نوع الجهاز</th>
+                            <th class="tblcoltext">الطلب</th>
+                            <th class="tblcoltext">حاله الطلب</th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                    @foreach (var item in Model)
+                    {
+                        <tr class="order namesearch">
+                                <td><a asp-action="getdata" asp-controller="Admin" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.Name </a></td>
+                                <td >@item.Phone</td>
+                                <td>@item.city</td>
+                                <td>@item.Address</td>
+                                <td>@item.TypeOfCustomer</td>
+                                <td>@item.Ps4OrPs5</td>
+                            <td>@item.Order</td>
+                            @if (item.StateOfOrder=="الانتظار")
+                            {
+                                <td class="pending searchstate">@item.StateOfOrder</td>
+                            }
+                                else if (item.StateOfOrder == "تمت الصيانه")
+                                {
+                                    <td class="completed searchstate">@item.StateOfOrder</td>
+                                }
+                            else if (item.StateOfOrder == "تتم الصيانه")
+                            {
+                                    <td class="inprgress searchstate">@item.StateOfOrder</td>
+
+                            }
+                                else if (item.StateOfOrder == "الغاء الصيانه")
+                                {
+                                    <td class="canceled searchstate">@item.StateOfOrder</td>
+
+                                }
+                            else{
+                                <td>@item.StateOfOrder</td>
+                            }
+                                <td><a asp-action="Edit" asp-route-id="@item.Id" asp-controller="Order" class="btn btn-secondary">تعديل الطلب</a></td>
+                               
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+
+
+<script src="~/js/admin.js"></script>
+<script src="~/html2pdf.js/html2pdf.bundle.min.js"></script>
+
+
+@section Scripts {
+    <script>
+       
+    </script>
+}

@@ -1,0 +1,47 @@
+﻿@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+ 
+}
+@{
+    var Name = "العدةوالأدوات";
+    var psName = "الأثاث-الأجهزة";
+}
+<h1>getdata</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:100%;padding-right: 0px;padding-left: 0px;">
+
+        <section class="">
+            <h2 class="title"></h2>
+            <div class="mycontent">
+                <a asp-action="Detials" asp-controller="StaticAssets" asp-route-typeofStaticAssets=@Name>
+                    <div class="mycard" style="width:600px;">
+                        <div class="icon">
+                            <img src="~/img/e4fd2af9-1cfa-4c9b-8ffe-222c28111744.png" style="width:100%;" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> العدة والأدوات </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a asp-action="Detials" asp-controller="StaticAssets" asp-route-typeofStaticAssets=@psName>
+                    <div class="mycard" style="width:600px;">
+                        <div class="icon">
+                            <img src="~/img/0a536b3d-2bf6-41d4-b790-969bae6a9cbe.png" alt="Alternate Text" />
+                        </div>
+                        <div class="info">
+                            <h3> الأثاث والأجهزة </h3>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Console_Care.Models.Purchase_Payments>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+
+
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.SupplierName);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Invoicenumber);
+
+    }
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+
+    <script src="~/moment.js/moment.min.js"></script>
+    <script src="~/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+}
+
+<partial>
+    @Html.Partial("BankingDashBoard");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filtername" onchange="filter2()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>material</label>
+            <select class="form-control" id="filterps" onchange="filter2()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>date</label>
+            <input type="date" class="form-control" id="filterCity" onchange="filter2()" />
+
+        </div>
+
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>مدفوعات المشتريات</h2>
+        </div>
+        <div>
+            <a asp-action="Create" class="btn btn-success ">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.SupplierName)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.InvoiceValue)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.PaidValue)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.remaining)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.Invoicenumber)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.Note)</th>
+                            <th class="tblcoltext "> @Html.DisplayNameFor(model => model.DateTime)</th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            <tr class="order namesearch">
+                                <td><a style="text-decoration:none; color:white">@item.SupplierName </a></td>
+                                <td><a style="text-decoration:none; color:white">@item.InvoiceValue </a></td>
+                                <td>@item.PaidValue</td>
+                                <td>@item.remaining</td>
+                                <td>@item.Invoicenumber</td>
+                                <td>@item.Note</td>
+                                <td>@item.DateTime.ToString("yyyy-MM-dd hh:mm:ss tt")</td>
+                                <td>
+                                    <a asp-route-id="@item.Id" class="btn btn-secondary" asp-action="Edit">Edit</a> |
+                                    <a asp-action="DeleteConfirmed" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> |
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+
+<script src="~/js/admin.js"></script>
+<script src="~/html2pdf.js/html2pdf.bundle.min.js"></script>
+
+
+@section Scripts {
+    <script>
+
+    </script>
+}

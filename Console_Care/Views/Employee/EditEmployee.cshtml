@@ -1,0 +1,52 @@
+﻿@model Console_Care.Models.Employee
+
+@{
+    ViewData["Title"] = "EditEmployee";
+}
+
+
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+
+
+<h1>EditEmployee</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:100%">
+
+        <section class="">
+            <h2 class="title" style="color:white;">تعديل بيانات الموظفين</h2>
+            <form asp-action="EditEmployee" style="justify-items: center;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="id" />
+                <div class="form-group">
+                    <label asp-for="name" class="control-label"></label>
+                    <input asp-for="name" class="form-control" />
+                    <span asp-validation-for="name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="role" class="control-label"></label>
+                    <input asp-for="role" class="form-control" />
+                    <span asp-validation-for="role" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Note" class="control-label"></label>
+                    <input asp-for="Note" class="form-control" />
+                    <span asp-validation-for="Note" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </section>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

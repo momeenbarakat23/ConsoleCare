@@ -1,0 +1,55 @@
+﻿@using Console_Care.ViewModel
+@model LoginViewModel
+@{
+    ViewData["Title"] = "LogIn";
+}
+
+@section css{
+    <link href="~/css/order.css" rel="stylesheet" />
+    <link href="~/css/auth.css" rel="stylesheet" />
+    <style>
+       
+
+       
+</style>
+}
+
+
+
+<h4>OrderByCustomer</h4>
+<hr />
+<div class="orderform">
+    <div class="col-md-4">
+        <form asp-action="login" method="post">
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <div class="password">
+                    <img src="~/img/images1.png" onclick="pass()" class="passicon" style="right:0; left:90%" ; id="passicon" alt="Alternate Text" />
+                    <input asp-for="Password" id="password" class="form-control" icon="showpass" />
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="remember">
+                <input asp-for="RememberMe" class="" />
+                <h6>RememberMe</h6>
+                <span asp-validation-for="RememberMe" class=""></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="LogIn" class="btn btn-success form-control" />
+                <hr />
+                <a asp-action="Register" class="btn btn-dark form-control">Register</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

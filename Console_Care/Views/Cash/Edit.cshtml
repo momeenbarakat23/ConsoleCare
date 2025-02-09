@@ -1,0 +1,78 @@
+﻿@model Console_Care.Models.Cash
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+@section css {
+    <link href="~/css/adminform.css" rel="stylesheet" />
+}
+
+
+<h1>EditEmployee</h1>
+<div class="mycontainer" style="margin-left:0px;">
+
+    <div class=" Deleteform " style="width:100%">
+
+        <section class="">
+            <h2 class="title" style="color:white;">تعديل نقديه</h2>
+            <form asp-action="Edit" style="justify-items: center;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="AccountName" class="control-label"></label>
+                    <input asp-for="AccountName" class="form-control" />
+                    <span asp-validation-for="AccountName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="paid" class="control-label"></label>
+                    <input asp-for="paid" class="form-control" />
+                    <span asp-validation-for="paid" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Outgoing" class="control-label"></label>
+                    <input asp-for="Outgoing" class="form-control" />
+                    <span asp-validation-for="Outgoing" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MoneyOut" class="control-label"></label>
+                    <input asp-for="MoneyOut" class="form-control" />
+                    <span asp-validation-for="MoneyOut" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Nameofcust" class="control-label"></label>
+                    <input asp-for="Nameofcust" class="form-control" />
+                    <span asp-validation-for="Nameofcust" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NoOfaccount" class="control-label"></label>
+                    <input asp-for="NoOfaccount" class="form-control" />
+                    <span asp-validation-for="NoOfaccount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Statement" class="control-label"></label>
+                    <input asp-for="Statement" class="form-control" />
+                    <span asp-validation-for="Statement" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </section>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

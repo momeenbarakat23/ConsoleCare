@@ -1,0 +1,277 @@
+﻿@model List<Console_Care.ViewModel.ItineraryViewModel>
+
+@{
+    ViewData["Title"] = "itinerary Dashboard";
+}
+
+
+@{
+
+
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.NameOfcustomer);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Nameoftech);
+
+    }
+    var list3 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list3.Add(item.cityOfcustomer);
+
+    }
+    var list4 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list4.Add(item.StateOfOrderforcustomer);
+
+    }
+    var list5 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list5.Add(item.NameOfAssistant);
+
+    }
+}
+@section css{
+    <link href="~/css/admin.css" rel="stylesheet" />
+}
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filtername" onchange="filter()">
+                <option value="0" >--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }       
+            </select>
+        
+        </div>
+        <div class="filterlist">
+            <label>Name of technical</label>
+            <select class="form-control" id="filterps" onchange="filter()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>city</label>
+            <select class="form-control" id="filterCity" onchange="filter()">
+                <option value="0">--select--</option>
+                @foreach (var item in list3)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>حاله الطلب</label>
+            <select class="form-control" id="filterTypeOfCustomer" onchange="filter()">
+                <option value="0">--select--</option>
+                @foreach (var item in list4)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>Nameofassistent</label>
+            <select class="form-control" id="filterNameofassistent" onchange="filter()">
+                <option value="0">--select--</option>
+                @foreach (var item in list5)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>خط السير</h2>
+        </div>
+        <div>
+            <a id="dl-csvorder" class="btn btn-secondary ">Download As Excel</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder" style="width:2000px;">
+                    <thead >
+                        <tr  >
+                            <th class="tblcoltext " >اسم العميل</th>
+                            <th class="tblcoltext ">اسم الفني</th>
+                            <th class="tblcoltext ">اسم المساعد</th>
+                            <th class="tblcoltext ">باقي التيم</th>
+                            <th class="tblcoltext ">مدخل البيانات</th>
+                            <th class="tblcoltext ">ملاحظات للفريق</th>
+                            <th class="tblcoltext ">مسؤول خط السير</th>
+                            <th class="tblcoltext ">المعاد المناسب للعميل</th>
+                            <th class="tblcoltext">تاريخ الزياره</th>
+                            <th class="tblcoltext">نوع الزياره</th>
+                            <th class="tblcoltext">نوع العميل</th>
+                            <th class="tblcoltext">مدينه</th>
+                            <th class="tblcoltext">عنوانه</th>
+                            <th class="tblcoltext">طلب العميل</th>
+                            <th class="tblcoltext">رقم العميل</th>
+                            <th class="tblcoltext"> بيان العطل</th>
+                            <th class="tblcoltext"> الملاحظات</th>
+                            <th class="tblcoltext"> حاله الطلب</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        
+                    @foreach (var item in Model)
+                    {
+                            @if (item.Nameoftech == ViewBag.name || item.NameOfAssistant==ViewBag.name)
+                            {
+                                <tr class="order namesearch">
+
+                                    <td><a asp-action="Editdata" asp-controller="itinerary" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameOfcustomer </a></td>
+                                    <td><a asp-action="getdata" asp-controller="Admin" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.Nameoftech </a></td>
+                                    <td><a asp-action="getdata" asp-controller="Admin" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameOfAssistant </a></td>
+                                    <td><a asp-action="getdata" asp-controller="Admin" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.RemainingTeam </a></td>
+                                    <td><a asp-action="getdata" asp-controller="Admin" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.DataEntryName </a></td>
+                                    <td>@item.NotesToMaintenanceTeam</td>
+                                    <td>@item.RouteDistributionOfficer</td>
+                                    <td>@item.VisitStatus</td>
+                                    <td>@item.VisitDate</td>
+                                    <td>@item.VisitClassification</td>
+                                    <td>@item.typeofcustomer</td>
+                                    <td>@item.cityOfcustomer</td>
+                                    @if (item.AddressOfcustomer.Contains("maps"))
+                                    {
+                                        <td><a href="@item.AddressOfcustomer">@item.AddressOfcustomer</a></td>
+                                    }
+                                    else
+                                    {
+                                        <td>@item.AddressOfcustomer</td>
+                                    }
+                                    <td>@item.Orderforcustomer</td>
+                                    <td>@item.PhoneOfcustomer</td>
+                                    <td>@item.FaultStatement</td>
+                                    <td>@item.Note</td>
+                                    @if (item.StateOfOrderforcustomer == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.StateOfOrderforcustomer</td>
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "تمت الصيانه")
+                                    {
+                                        <td class="completed searchstate">@item.StateOfOrderforcustomer</td>
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.StateOfOrderforcustomer</td>
+
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.StateOfOrderforcustomer</td>
+
+                                    }
+                                    else
+                                    {
+                                        <td>@item.StateOfOrderforcustomer</td>
+                                    }
+
+                                </tr>
+                            }
+                            else  @if ((User.IsInRole("admin")) || (User.IsInRole("superadmin")))
+                            {
+                                <tr class="order namesearch">
+                                        <td><a asp-action="Editdata" asp-controller="itinerary" asp-route-id="@item.Id" style="text-decoration:none; color:white">@item.NameOfcustomer </a></td>
+                                    <td>@item.Nameoftech </td>
+                                    <td>@item.NameOfAssistant </td>
+                                    <td>@item.RemainingTeam </td>
+                                    <td>@item.DataEntryName </td>
+                                    <td>@item.NotesToMaintenanceTeam</td>
+                                    <td>@item.RouteDistributionOfficer</td>
+                                    <td>@item.VisitStatus</td>
+                                    <td>@item.VisitDate</td>
+                                    <td>@item.VisitClassification</td>
+                                    <td>@item.typeofcustomer</td>
+                                    <td>@item.cityOfcustomer</td>
+                                    @if (item.AddressOfcustomer.Contains("maps"))
+                                    {
+                                        <td><a href="@item.AddressOfcustomer">@item.AddressOfcustomer</a></td>
+                                    }
+                                    else{
+                                        <td>@item.AddressOfcustomer</td>
+                                    }
+                                   
+                                    <td>@item.Orderforcustomer</td>
+                                    <td>@item.PhoneOfcustomer</td>
+                                    <td>@item.FaultStatement</td>
+                                    <td>@item.Note</td>
+                                    @if (item.StateOfOrderforcustomer == "الانتظار")
+                                    {
+                                        <td class="pending searchstate">@item.StateOfOrderforcustomer</td>
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "تمت الصيانه")
+                                    {
+                                        <td class="completed searchstate">@item.StateOfOrderforcustomer</td>
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "تتم الصيانه")
+                                    {
+                                        <td class="inprgress searchstate">@item.StateOfOrderforcustomer</td>
+
+                                    }
+                                    else if (item.StateOfOrderforcustomer == "الغاء الصيانه")
+                                    {
+                                        <td class="canceled searchstate">@item.StateOfOrderforcustomer</td>
+
+                                    }
+                                    else
+                                    {
+                                        <td>@item.StateOfOrderforcustomer</td>
+                                    }
+
+                                </tr>
+                            }
+                        
+                    }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+
+
+<script src="~/js/admin.js"></script>
+@section Scripts {
+   
+}

@@ -1,0 +1,156 @@
+﻿@model IEnumerable<Console_Care.Models.Materials>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@{
+    var x = 0;
+    var list1 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list1.Add(item.Name);
+
+    }
+    var list2 = new HashSet<string>();
+    foreach (var item in Model)
+    {
+        list2.Add(item.Storage);
+
+    }
+
+}
+@section css {
+    <link href="~/css/admin.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/jquery/jquery.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.min.js"></script>
+}
+<partial>
+    @Html.Partial("admindashbord");
+</partial>
+
+<div class="mainorder">
+    <div class="topbar">
+        <div class="search">
+            <label class="bar">
+                <input type="text" id="searchinput" placeholder="Search Here..." onkeyup="search()" />
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </div>
+    <div class="filter">
+        <div class="filterlist">
+            <label>Name</label>
+            <select class="form-control" id="filternameemp" onchange="filteremp()">
+                <option value="0">--select--</option>
+                @foreach (var item in list1)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+        <div class="filterlist">
+            <label>Name of Storage</label>
+            <select class="form-control" id="filterrole" onchange="filteremp()">
+                <option value="0">--select--</option>
+                @foreach (var item in list2)
+                {
+                    <option>@item</option>
+                }
+            </select>
+
+        </div>
+
+    </div>
+    <div class="allorders uppertabemp">
+        <div>
+            <h2>المخزون</h2>
+        </div>
+        <div>
+            <a asp-action="addmaterial" class="btn btn-success ">Add</a>
+        </div>
+    </div>
+    <section class="details">
+        <div class="allorders">
+            <div class="cardheader">
+                <table class="table scroll" id="tblorder">
+                    <thead>
+                        <tr>
+                            <th class="tblcoltext ">الاسم</th>
+                            <th class="tblcoltext ">مكان التخزين</th>
+                            <th class="tblcoltext">الكميه</th>
+                            <th class="tblcoltext">اقل كميه قبل الشراء</th>
+                            <th class="tblcoltext"> كميه في المخزن</th>
+                            <th class="tblcoltext">(Home)سعر القطعه</th>
+                            <th class="tblcoltext">(psCafe)سعر القطعه</th>
+                            <th class="tblcoltext"> سعر الشراء</th>
+                            <th class="tblcoltext"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="mytable">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Quantity<=item.minQuantity)
+                            {
+                                <tr class="orderemp namesearch" style="background-color:red;">
+
+                                    <td>@item.Name </td>
+                                    <td>@item.Storage</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.minQuantity</td>
+                                    <td>@item.Quantityinstorage</td>
+                                    <td>@item.priceForHome EGP</td>
+                                    <td>@item.priceForPs EGP</td>
+                                    <td>@item.priceForbuy EGP</td>
+                                    <td>
+                                        <a asp-action="Edititem" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a> |
+                                        <a class="delete btn btn-danger " alert="Swal.fire" asp-action="DeleteConfirm" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                            else{
+                                <tr class="orderemp namesearch">
+
+                                    <td>@item.Name </td>
+                                    <td>@item.Storage</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.minQuantity</td>
+                                    <td>@item.Quantityinstorage</td>
+                                    <td>@item.priceForHome EGP</td>
+                                    <td>@item.priceForPs EGP</td>
+                                    <td>@item.priceForbuy EGP</td>
+                                    <td>
+                                        <a asp-action="Edititem" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a> |
+                                        <a class="delete btn btn-danger " alert="Swal.fire" asp-action="DeleteConfirm" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+
+                          
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+@section Scripts {
+
+
+$('.delete').click( function (e) {
+    e.preventDefult();
+    var self = $(this).val();
+    alert(self)
+    
+    })
+
+
+
+
+}

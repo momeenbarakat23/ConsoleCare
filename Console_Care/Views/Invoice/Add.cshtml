@@ -1,0 +1,175 @@
+﻿@model Console_Care.Models.Invoice
+
+@{
+
+    var dropdownlist = new SelectList(ViewBag.emp, "name", "name");
+    ViewData["Title"] = "Add";
+}
+
+@section css{
+    <link href="~/css/invoice.css" rel="stylesheet" />
+}
+
+<div class="container mt-5">  
+    <img class="invoiceimg" src="~/img/Screenshot (2232).png" alt="Alternate Text" />
+    <form asp-action="Add" id="invoiceform" class="mystaticform">
+        <div class="row mt-5 mb-5">
+            <div class="form-group col-md-4">
+                <label for="CustomerName" class="col-form-label-lg">اسم العميل</label>
+                <input type="text" value="@ViewBag.name" class="form-control" id="CustomerName"  />
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="nameoftechnecal" class="col-form-label-lg">اسم الفني</label>
+                <select asp-items="dropdownlist" asp-for="nameoftechnecal" class="form-control" id="nameoftech">
+                    <option value="0" selected>select</option>
+                </select>
+                <span asp-validation-for="nameoftechnecal" class="text-danger"></span>
+                
+            </div>
+            <div class="form-group col-md-4">
+                <label class="col-form-label-lg">نوع الفاتوره</label>
+                <select class="form-control" asp-for="typeofinvoice" id="typeofcust">
+                    <option value="0" selected>select</option>
+                    <option value="PsCafe">PsCafe</option>
+                    <option value="Home">Home</option>
+                    <option value="HallEffect">Hall Effect</option>
+                </select>
+
+                
+            </div>
+           
+            <div class="form-group col-md-4">
+                <label asp-for="DateTime" class="col-form-label-lg"></label>
+                <input asp-for="DateTime" class="form-control" id="Date" />
+                <span asp-validation-for="DateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="Paid" class="col-form-label-lg"></label>
+                <input asp-for="Paid" value="0" class="form-control" id="Date" />
+                <span asp-validation-for="Paid" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label class="col-form-label-lg">نوع الدفع</label>
+                <select class="form-control" asp-for="typeofcash">
+                    <option value="0" selected>select</option>
+                    <option value="كاش">كاش</option>
+                    <option value="فودافون-كاش">فودافون كاش</option>
+                    <option value="انستا-باي">انستا باي</option>
+                </select>
+            </div>
+        </div>
+        <table class="table table-bordered" style="direction:rtl;">
+            <thead>
+                <tr>
+                    <th scope="col">رقم</th>
+                    <th scope="col">المواصفات</th>
+                    <th scope="col">الكميه</th>
+                    <th scope="col">السعر</th>
+                    <th scope="col">خصم قطع</th>
+                    <th scope="col">المبلغ الكلي</th>
+                </tr>
+            </thead>
+            <tbody id="invoiceitems">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="total-row">
+                        <label asp-for="Total_Amount" class="control-label"></label>
+                        <input asp-for="Total_Amount" class="form-control" id="totalamount" oninput="calculateTotal()"  readonly  />
+                        <span asp-validation-for="Total_Amount" class="text-danger"></span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="addinvoiceitem()">اضافه قطعه</button>
+        <div class="row mt-5 mb-5">
+            <div class="form-group col-md-5">
+                <label asp-for="specialDiscount" class="col-form-label-lg"> </label>
+                <input type="text" asp-for="specialDiscount" class="form-control" id="specialDiscount" oninput="calculateTotal()" />
+            </div>
+            
+            <div class="form-group col-md-5">
+                <label asp-for="Total_Amountafterdisc" class="col-form-label-lg"></label>
+                <input type="text" asp-for="Total_Amountafterdisc" class="form-control" id="totalamountafterdisc" oninput="calculateTotal()"  readonly />
+            </div>
+            <div class="form-group col-md-5">
+                <br />
+                <input  type="submit" value="حفظ الفاتوره" class="btn btn-success" />
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-danger btn-print mt-4" style="margin-right:19px;" onclick="printinvoice()">طباعه الفاتوره</button>
+
+
+</div>
+
+
+
+
+@section Scripts {
+    <script src="~/js/Invoice.js"></script>
+    <script src="~/jquery/jquery.slim.min.js"></script>
+    <script src="~/popper.js/umd/popper.min.js"></script>
+}
+
+
+@* 
+<form asp-action="Add" id="invoiceform">
+    <div class="row mt-5 mb-5">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="form-group col-md-6">
+            <label asp-for="number" class="control-label"></label>
+            <input asp-for="number" class="form-control" />
+            <span asp-validation-for="number" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="item" class="control-label"></label>
+            <input asp-for="item" class="form-control" />
+            <span asp-validation-for="item" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="quantity" class="control-label"></label>
+            <input asp-for="quantity" class="form-control" />
+            <span asp-validation-for="quantity" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="price" class="control-label"></label>
+            <input asp-for="price" class="form-control" />
+            <span asp-validation-for="price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Discount" class="control-label"></label>
+            <input asp-for="Discount" class="form-control" />
+            <span asp-validation-for="Discount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Discountwarranty" class="control-label"></label>
+            <input asp-for="Discountwarranty" class="form-control" />
+            <span asp-validation-for="Discountwarranty" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="specialDiscount" class="control-label"></label>
+            <input asp-for="specialDiscount" class="form-control" />
+            <span asp-validation-for="specialDiscount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Total_Amount" class="control-label"></label>
+            <input asp-for="Total_Amount" class="form-control" />
+            <span asp-validation-for="Total_Amount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Total_Amountafterdisc" class="control-label"></label>
+            <input asp-for="Total_Amountafterdisc" class="form-control" />
+            <span asp-validation-for="Total_Amountafterdisc" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateTime" class="control-label"></label>
+            <input asp-for="DateTime" class="form-control" />
+            <span asp-validation-for="DateTime" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </div>
+</form> *@
